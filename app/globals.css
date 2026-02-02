@@ -60,6 +60,15 @@
   .bg-omega {
     @apply bg-[#e56e1b];
   }
+  .container {
+    @apply w-[90%] mx-auto;
+  }
+
+  @media (min-width: 1024px) {
+    .container {
+      @apply w-[calc(100%-200px)];
+    }
+  }
 }
 
 @theme inline {
@@ -76,7 +85,7 @@
   --popover-foreground: oklch(0.145 0 0);
   --primary: oklch(0.205 0 0);
   --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
+  --secondary: #299fb0;
   --secondary-foreground: oklch(0.205 0 0);
   --muted: oklch(0.97 0 0);
   --muted-foreground: oklch(0.556 0 0);
