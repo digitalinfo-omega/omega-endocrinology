@@ -5,7 +5,7 @@ import type { FC } from "react";
 const HeroSection: FC = () => {
   return (
     <main
-      className="py-20"
+      className="py-10 md:py-20"
       style={{
         background:
           "linear-gradient(101.5deg, rgba(254, 194, 194, 0.12) 4.41%, rgba(252, 222, 158, 0.12) 111.54%)",
@@ -81,15 +81,15 @@ const HeroSection: FC = () => {
             {/* Buttons */}
             <div className="flex flex-wrap gap-4 pt-4">
               <Link
-                href="/contact"
-                className="rounded-full bg-secondary px-8 py-4 text-lg font-semibold text-white shadow-lg transition-all hover:scale-105 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-pink-400 focus:ring-offset-2"
+                href=""
+                className="rounded-[10px] bg-secondary px-8 py-4 text-[16px] font-semibold text-white shadow-lg transition-all hover:scale-105"
               >
                 Get In Touch
               </Link>
 
               <Link
-                href="/services"
-                className="group flex items-center gap-2 rounded-full border-2 border-amber-500 px-8 py-4 text-lg font-semibold text-amber-700 transition-all hover:bg-amber-50 hover:shadow-md"
+                href=""
+                className="group flex items-center gap-2 rounded-[10px] border-2 border-accent px-8 py-4 text-[16px] font-semibold text-accent transition-all hover:bg-accent/50"
               >
                 Explore Our Services
                 <span className="transition-transform group-hover:translate-x-1">

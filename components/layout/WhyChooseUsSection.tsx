@@ -21,7 +21,7 @@ const Bullet = ({ text }: { text: string }) => (
 
 const WhyChooseUsSection: FC = () => {
   return (
-    <section className="py-16 md:py-20 lg:py-24 bg-white dark:bg-gray-950">
+    <section className="py-10 md:py-20 bg-white dark:bg-gray-950 relative">
       <div className="container">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 xl:gap-16 relative items-stretch">
           {/* Image */}
@@ -31,21 +31,6 @@ const WhyChooseUsSection: FC = () => {
               alt="Doctor team endocrinology"
               className="absolute inset-0 w-full h-full object-cover"
             />
-
-            <div className="absolute bottom-10 right-4">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="25"
-                height="19"
-                viewBox="0 0 17 16"
-                fill="none"
-              >
-                <path
-                  d="M2.15525 15.7075L2.94214 11.1144L0 7.50054L4.59313 8.28743L8.20698 5.34527L7.42008 9.93842L10.3622 13.5523L5.7691 12.7654L2.15525 15.7075Z"
-                  fill="#E56E1B"
-                />
-              </svg>
-            </div>
           </div>
 
           {/* Content */}
@@ -73,7 +58,7 @@ const WhyChooseUsSection: FC = () => {
                 ["8+", "Years of Expertise"],
                 ["98%", "Patient Satisfaction"],
               ].map(([v, t]) => (
-                <div key={t} className="border-2 border-gray-300 p-5">
+                <div key={t} className="border-2 border-gray-100 p-5">
                   <p className="text-[18px] font-bold text-accent">{v}</p>
                   <p className="mt-2 text-[16px] text-black dark:text-gray-400">
                     {t}
@@ -88,10 +73,38 @@ const WhyChooseUsSection: FC = () => {
               <Bullet text="Modern Treatment Protocols" />
             </div>
 
-            <button className="self-start px-8 py-4 bg-accent text-white font-medium text-lg rounded-xl hover:bg-accent/90 transition-colors shadow-md">
+            <button className="self-start px-5 py-3 bg-accent text-white font-medium text-[16px] rounded-xl hover:bg-accent/90 transition-colors shadow-md">
               Book Appointment
             </button>
           </div>
+        </div>
+        <div className="absolute bottom-18 left-[45%]">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="25"
+            height="23"
+            viewBox="0 0 17 16"
+            fill="none"
+          >
+            <path
+              d="M2.15525 15.7075L2.94214 11.1144L-2.04742e-05 7.50054L4.59313 8.28743L8.20698 5.34527L7.42008 9.93842L10.3622 13.5523L5.7691 12.7654L2.15525 15.7075ZM4.2123 4.74939L4.59166 2.63928L3.22447 0.987845L5.33458 1.36721L6.98601 1.43349e-05L6.60665 2.11012L7.97384 3.76156L5.86374 3.38219L4.2123 4.74939ZM11.3709 11.8252L11.8062 9.15212L10.1136 7.03781L12.7867 7.47311L14.901 5.78057L14.4657 8.45367L16.1583 10.568L13.4852 10.1327L11.3709 11.8252Z"
+              fill="#E56E1B"
+            />
+          </svg>
+        </div>
+        <div className="absolute top-18 right-1/12">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="25"
+            height="23"
+            viewBox="0 0 17 16"
+            fill="none"
+          >
+            <path
+              d="M2.15525 15.7075L2.94214 11.1144L-2.04742e-05 7.50054L4.59313 8.28743L8.20698 5.34527L7.42008 9.93842L10.3622 13.5523L5.7691 12.7654L2.15525 15.7075ZM4.2123 4.74939L4.59166 2.63928L3.22447 0.987845L5.33458 1.36721L6.98601 1.43349e-05L6.60665 2.11012L7.97384 3.76156L5.86374 3.38219L4.2123 4.74939ZM11.3709 11.8252L11.8062 9.15212L10.1136 7.03781L12.7867 7.47311L14.901 5.78057L14.4657 8.45367L16.1583 10.568L13.4852 10.1327L11.3709 11.8252Z"
+              fill="#E56E1B"
+            />
+          </svg>
         </div>
       </div>
     </section>

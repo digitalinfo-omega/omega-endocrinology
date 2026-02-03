@@ -13,7 +13,7 @@ import CustomAccordion from "../helpers/CustomAccordion";
 
 const LetTalkQuestions = ({ title, items }: LetTalkQuestionsProps) => {
   return (
-    <section className="py-10 md:py-16">
+    <section className="py-10 md:py-20">
       <div className="container">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           <div>

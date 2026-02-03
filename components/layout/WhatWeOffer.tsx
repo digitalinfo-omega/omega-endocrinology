@@ -21,7 +21,7 @@ const offers = [
 
 const WhatWeOffer = () => {
   return (
-    <section className="py-10 md:py-16">
+    <section className="py-10 md:py-20">
       <div className="container">
         <h2 className="text-center text-accent text-[24px] font-bold mb-10">
           What we offer at Omega Hospitals

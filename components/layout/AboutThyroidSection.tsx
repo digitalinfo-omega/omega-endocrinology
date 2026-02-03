@@ -12,33 +12,33 @@ const AboutSection: FC<AboutSectionProps> = ({
   title,
   description,
   features,
-  imagePlaceholderText = "Thyroid / Anatomy Illustration (SVG / PNG goes here)",
+  imagePlaceholderText = "/images/throat.webp",
 }) => {
   return (
-    <section className="py-16 md:py-20 lg:py-24 bg-white dark:bg-gray-950">
+    <section className="py-10 md:py-20 bg-white dark:bg-gray-950">
       <div className="container">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 xl:gap-16 items-center">
           {/* Left - Image placeholder only */}
-          <div className="relative flex justify-center lg:justify-start">
-            <div className="relative w-full max-w-130 aspect-4/5 md:aspect-5/6">
-              <div className="absolute inset-0 bg-gray-100 dark:bg-gray-800 rounded-xl flex items-center justify-center text-gray-500 dark:text-gray-600 text-center px-6 text-sm md:text-base">
-                {imagePlaceholderText}
-              </div>
-            </div>
+          <div className="relative w-full">
+            <img
+              src="/images/throat.webp"
+              alt=""
+              className="h-full w-full object-cover"
+            />
           </div>
 
           {/* Right - Content */}
           <div className="space-y-8 md:space-y-10">
             <div className="space-y-5 md:space-y-6">
-              <span className="inline-block text-accent uppercase tracking-wider font-medium text-sm md:text-base">
+              <span className="inline-block text-accent uppercase tracking-wider font-medium text-[18px]">
                 ABOUT US
               </span>
 
-              <h2 className="text-[24px] md:text-[32px] font-bold leading-tight text-gray-900 dark:text-white">
+              <h2 className="text-[24px] font-bold leading-tight text-black dark:text-white">
                 {title}
               </h2>
 
-              <p className="text-[18px] md:text-[24px] text-gray-700 dark:text-gray-300 leading-relaxed">
+              <p className="text-[18px] text-black dark:text-gray-300 leading-relaxed">
                 {description}
               </p>
             </div>
@@ -61,7 +61,7 @@ const AboutSection: FC<AboutSectionProps> = ({
                       />
                     </svg>
                   </div>
-                  <p className="text-[14px] md:text-[18px] text-gray-800 dark:text-gray-200">
+                  <p className="text-[14px] md:text-[18px] text-black dark:text-gray-200">
                     {feature}
                   </p>
                 </div>

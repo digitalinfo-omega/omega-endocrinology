@@ -14,7 +14,7 @@ interface OurServicesSectionProps {
 
 const OurServicesSection: FC<OurServicesSectionProps> = ({ services }) => {
   return (
-    <section className="py-11 md:py-20 lg:py-24 bg-[#F9FAFF]">
+    <section className="py-10 md:py-20 bg-[#F9FAFF]">
       <div className="container">
         {/* Header */}
         <div className="text-center mb-14 md:mb-16 lg:mb-20">
