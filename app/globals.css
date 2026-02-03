@@ -152,3 +152,29 @@
     @apply bg-background text-foreground font-sans md:pb-0 pb-12;
   }
 }
+
+@keyframes accordion-down {
+  from {
+    height: 0;
+  }
+  to {
+    height: var(--radix-accordion-content-height);
+  }
+}
+
+@keyframes accordion-up {
+  from {
+    height: var(--radix-accordion-content-height);
+  }
+  to {
+    height: 0;
+  }
+}
+
+.animate-accordion-down {
+  animation: accordion-down 300ms ease-out;
+}
+
+.animate-accordion-up {
+  animation: accordion-up 300ms ease-out;
+}
