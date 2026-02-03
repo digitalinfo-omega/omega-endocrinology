@@ -23,19 +23,19 @@ const WhyChooseUsSection: FC = () => {
   return (
     <section className="py-10 md:py-20 bg-white dark:bg-gray-950 relative">
       <div className="container">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 xl:gap-16 relative items-stretch">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 relative">
           {/* Image */}
-          <div className="relative h-full min-h-90 overflow-hidden rounded-xl">
+          <div className="relative h-full overflow-hidden rounded-xl">
             <img
               src="/images/why-choose-us.webp"
               alt="Doctor team endocrinology"
-              className="absolute inset-0 w-full h-full object-cover"
+              className="w-full h-full object-cover"
             />
           </div>
 
           {/* Content */}
-          <div className="flex flex-col justify-between space-y-10 md:space-y-12">
-            <div className="space-y-6">
+          <div className="flex flex-col space-y-6">
+            <div className="">
               <span className="inline-block text-accent uppercase tracking-wider font-bold text-[24px]">
                 WHY CHOOSE US
               </span>
