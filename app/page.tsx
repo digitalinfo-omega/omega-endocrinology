@@ -1,15 +1,8 @@
-import { questions } from "@/components/constants/LetTalkQuestions";
 import { servicesData } from "@/components/constants/OurServicesSection";
 import AboutSection from "@/components/layout/AboutThyroidSection";
-import Emergency from "@/components/layout/Emergency";
 import HeroSection from "@/components/layout/HeroSection";
-import LetTalkQuestions from "@/components/layout/LetTalkQuestions";
-import OurCenters from "@/components/layout/OurCenters";
 import OurServicesSection from "@/components/layout/OurServicesSection";
-import RequestCallbackSection from "@/components/layout/RequestCallbackSection";
 import SpecialistSection from "@/components/layout/SpecialistSection";
-import VisitUs from "@/components/layout/VisitUs";
-import WhatWeOffer from "@/components/layout/WhatWeOffer";
 import WhyChooseUsSection from "@/components/layout/WhyChooseUsSection";
 
 export default function HomePage() {
@@ -31,11 +24,6 @@ export default function HomePage() {
       <OurServicesSection services={servicesData} />
       <WhyChooseUsSection />
       <SpecialistSection />
-      <OurCenters />
-      <WhatWeOffer />
-      <RequestCallbackSection />
-      <LetTalkQuestions title="Let’s Tak Any Questions" items={questions} />
-      <Emergency />
     </main>
   );
 }

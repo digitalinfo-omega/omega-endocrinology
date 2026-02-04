@@ -7,6 +7,12 @@ import Footer from "@/components/layout/Footer";
 import AOSProvider from "@/components/providers/AOSProvider";
 import MobileBottomNav from "@/components/layout/MobileBottomNav";
 import BookAppointment from "@/components/layout/BookAppointment";
+import { questions } from "@/components/constants/LetTalkQuestions";
+import LetTalkQuestions from "@/components/layout/LetTalkQuestions";
+import OurCenters from "@/components/layout/OurCenters";
+import Emergency from "@/components/layout/Emergency";
+import RequestCallbackSection from "@/components/layout/RequestCallbackSection";
+import WhatWeOffer from "@/components/layout/WhatWeOffer";
 import { Toaster } from "sonner";
 import { QueryClient } from "@tanstack/react-query";
 import ReactQueryProvider from "@/components/providers/ReactQueryProvider";
@@ -53,6 +59,11 @@ export default function RootLayout({
         <ReactQueryProvider>
           <NavBar />
           {children}
+          <OurCenters />
+          <WhatWeOffer />
+          <RequestCallbackSection />
+          <LetTalkQuestions title="Let’s Tak Any Questions" items={questions} />
+          <Emergency />
           <Footer />
           <BookAppointment />
           <MobileBottomNav />
