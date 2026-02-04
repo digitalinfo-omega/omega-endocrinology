@@ -9,8 +9,8 @@ const page = () => {
     <div>
       <div>
         <AdvancedDiabetesHero
-          title="Protect Your Bones, Preserve Your Independence"
-          description="Through early detection, lifestyle guidance, and targeted therapies, we help you build strong bones and preserve your mobility throughout your lifetime."
+          title="Comprehensive Cholesterol Management for Optimal Heart Health"
+          description="We combine lifestyle modifications with advanced medications when needed to help you achieve optimal cholesterol levels and protect your long-term heart health."
           leftWave="/images/diabetes/home-wave.webp"
           rightImage="/images/osteoporosis/home-osteoporosis.webp"
           buttonText="Get In Touch"
