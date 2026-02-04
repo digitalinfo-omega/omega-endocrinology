@@ -14,7 +14,7 @@ interface Props {
 export default function WhyChooseOmega({ heading, cards }: Props) {
   return (
     <section
-      className="w-full  py-10 md:py-20"
+      className="w-full py-10 md:py-20"
       style={{ background: "#E56E1B0D" }}
     >
       <div className="container">

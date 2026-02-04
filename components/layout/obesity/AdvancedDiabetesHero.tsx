@@ -38,7 +38,10 @@ export default function AdvancedDiabetesHero({
       </div>
 
       {/* Right Image */}
-      <div className={`absolute right-12 top-7 h-full z-10`} style={{ width }}>
+      <div
+        className={`absolute right-0 bottom-0 h-[297px] z-10`}
+        style={{ width }}
+      >
         <Image
           src={rightImage}
           alt="Hero"
