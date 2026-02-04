@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 
 interface Props {
   breadcrumb: string;
@@ -22,7 +23,8 @@ export default function About({
       <div className="container">
         {/* Breadcrumb */}
         <p className="text-sm mb-8">
-          Home / <span className="text-accent">{breadcrumb}</span>
+          <Link href="/">Home</Link> /{" "}
+          <span className="text-accent">{breadcrumb}</span>
         </p>
 
         <div className="grid md:grid-cols-2 gap-14 items-center">

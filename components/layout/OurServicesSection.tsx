@@ -1,16 +1,8 @@
 // components/OurServicesSection.tsx
 import { ArrowRight } from "lucide-react";
 import type { FC } from "react";
-
-interface ServiceCard {
-  title: string;
-  description: string;
-  icon: React.ReactNode;
-}
-
-interface OurServicesSectionProps {
-  services: ServiceCard[];
-}
+import { OurServicesSectionProps } from "../constants/OurServicesSection";
+import Link from "next/link";
 
 const OurServicesSection: FC<OurServicesSectionProps> = ({ services }) => {
   return (
@@ -52,7 +44,8 @@ const OurServicesSection: FC<OurServicesSectionProps> = ({ services }) => {
                 {service.description}
               </p>
 
-              <button
+              <Link
+                href={service.href}
                 className="group/btn relative overflow-hidden inline-flex items-center justify-between
     border border-accent p-2 gap-2
     text-accent hover:text-white
@@ -77,7 +70,7 @@ const OurServicesSection: FC<OurServicesSectionProps> = ({ services }) => {
       group-hover/btn:scale-100
     "
                 />
-              </button>
+              </Link>
             </div>
           ))}
         </div>

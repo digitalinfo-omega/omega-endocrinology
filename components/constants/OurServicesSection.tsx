@@ -1,4 +1,15 @@
-export const servicesData = [
+export interface ServiceCard {
+  title: string;
+  description: string;
+  icon: React.ReactNode;
+  href: string;
+}
+
+export interface OurServicesSectionProps {
+  services: ServiceCard[];
+}
+
+export const servicesData: ServiceCard[] = [
   {
     title: "Diabetes — Children to Old Age",
     description:
@@ -47,6 +58,7 @@ export const servicesData = [
         </svg>
       </>
     ),
+    href: "/diabetes",
   },
   {
     title: "Thyroid Disorders",
@@ -96,6 +108,7 @@ export const servicesData = [
         </svg>
       </>
     ),
+    href: "/thyroid",
   },
   {
     title: "Obesity / Overweight",
@@ -145,6 +158,7 @@ export const servicesData = [
         </svg>
       </>
     ),
+    href: "/obesity",
   },
   {
     title: "Growth Problems in Children",
@@ -194,6 +208,7 @@ export const servicesData = [
         </svg>
       </>
     ),
+    href: "/growth",
   },
   {
     title: "Osteoporosis",
@@ -243,6 +258,7 @@ export const servicesData = [
         </svg>
       </>
     ),
+    href: "/osteoporosis",
   },
   {
     title: "High Blood Cholesterol",
@@ -292,6 +308,7 @@ export const servicesData = [
         </svg>
       </>
     ),
+    href: "/cholesterol",
   },
   {
     title: "Gestational Diabetes",
@@ -341,6 +358,7 @@ export const servicesData = [
         </svg>
       </>
     ),
+    href: "/gestational",
   },
   {
     title: "PCOS / PCOD (Polycystic Ovary Syndrome / Disease)",
@@ -390,5 +408,6 @@ export const servicesData = [
         </svg>
       </>
     ),
+    href: "/pcos",
   },
 ];
