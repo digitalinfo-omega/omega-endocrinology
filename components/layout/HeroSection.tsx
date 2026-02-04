@@ -12,7 +12,7 @@ const HeroSection: FC = () => {
       }}
     >
       <div className="container">
-        <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2 lg:gap-16 xl:gap-20">
+        <div className="grid grid-cols-1 items-center gap-6 lg:grid-cols-2 lg:gap-12 xl:gap-18">
           {/* Left Column - Text Content */}
           <div className="flex flex-col items-start space-y-8 lg:space-y-10">
             {/* Top badge */}
@@ -108,7 +108,7 @@ const HeroSection: FC = () => {
             </div>
           </div>
 
-          <div className="relative w-full h-full">
+          <div className="relative w-full h-80">
             {/* You can later replace this with your actual image path */}
             <Image
               src="/images/digestive.webp"

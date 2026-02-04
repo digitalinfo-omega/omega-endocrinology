@@ -42,7 +42,7 @@ const OurCenters = () => {
           Our Centers
         </h2>
 
-        <p className="text-center text-[16px] mb-8 max-w-[50%] mx-auto">
+        <p className="text-center text-[16px] mb-8 md:max-w-[50%] w-full mx-auto">
           Set up in 2009 and present across 5 states, 10 cities & over 11
           centers, Omega Hospitals is the most trusted clinic chain in India
         </p>
