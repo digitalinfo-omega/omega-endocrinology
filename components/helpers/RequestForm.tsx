@@ -11,6 +11,7 @@ import {
 } from "@/schemas/appointment.schema";
 import { createAppointment } from "@/lib/api/appointment";
 import { ArrowDown, ArrowUpRight } from "lucide-react";
+import { servicesData } from "../constants/OurServicesSection";
 
 export default function RequestForm() {
   const {
@@ -75,9 +76,11 @@ export default function RequestForm() {
             className="w-full border rounded-md px-4 py-3 text-sm text-gray-500 "
           >
             <option value="">Select Departments</option>
-            <option value="Oncology">Oncology</option>
-            <option value="Cardiology">Cardiology</option>
-            <option value="Neurology">Neurology</option>
+            {servicesData.map((service, idx) => (
+              <option value={service.title} key={idx}>
+                {service.title}
+              </option>
+            ))}
           </select>
         </div>
       </div>

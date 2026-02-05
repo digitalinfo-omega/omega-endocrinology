@@ -38,7 +38,7 @@ your weight loss efforts while providing ongoing support."
         ]}
         sectionBg="#D9D9D91A"
         cardBg="#299FB00D"
-        iconBg="#fff"
+        iconBg="#f6fbfb"
         accentColor="#0ea5b7"
         cards={[
           {

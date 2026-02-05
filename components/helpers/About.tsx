@@ -57,6 +57,7 @@ export default function About({
                     viewBox="0 0 18 18"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
+                    className="min-w-4.5 min-h-4.5 shrink-0 mt-0.5"
                   >
                     <path
                       fillRule="evenodd"

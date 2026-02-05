@@ -15,6 +15,7 @@ const page = () => {
         rightImage="/images/thyroid/home-thyroid.webp"
         buttonText="Get In Touch"
         width="32%"
+        mobileWave="/images/home-mobile.webp"
       />
       <About
         breadcrumb="Thyroid Disorders"

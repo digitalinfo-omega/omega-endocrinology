@@ -163,7 +163,7 @@ const OurCenters = () => {
               {active.description}
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col md:flex-row gap-4">
               <button className="flex items-center justify-center gap-2 bg-accent text-white text-[14px] px-6 py-3 rounded-lg">
                 <CalendarDays size={20} />
                 BOOK A CONSULTAION

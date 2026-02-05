@@ -26,43 +26,53 @@ export default function AdvancedDiabetesHero({
       {/* Gradient Background */}
       <div className="absolute inset-0 bg-linear-to-r from-[#eaf7f9] via-[#cfeff4] to-[#7fd0dc]" />
 
-      {/* Left Wave */}
-      <div className="absolute left-0 top-0 h-full w-[42%] z-10">
+      {/* Wave */}
+      <div className="absolute inset-x-0 bottom-0 md:left-0 md:top-0 md:bottom-auto h-[307px] md:h-full md:w-[42%] z-10">
         <Image
           src={leftWave}
-          alt="Left Wave"
+          alt="Wave"
           fill
-          className="object-cover object-left"
+          className="object-cover md:object-left object-bottom"
           priority
         />
       </div>
 
-      {/* Right Image */}
-      <div className={`absolute right-12 top-7 h-full z-10`} style={{ width }}>
+      {/* Hero Image */}
+      <div
+        className="
+          relative md:absolute
+          mx-auto md:mx-0
+          mt-6 md:mt-0
+          md:right-12 md:top-7
+          h-[220px] md:h-full
+          z-20
+        "
+        style={{ width }}
+      >
         <Image
           src={rightImage}
           alt="Hero"
           fill
-          className="object-cover object-right"
+          className="object-contain md:object-cover"
           priority
         />
       </div>
 
       {/* Content */}
-      <div className="relative z-20 max-w-7xl mx-auto px-38 py-28">
-        <div className="max-w-xl">
-          <h2 className="text-accent text-[24px] leading-tight font-medium mb-5">
+      <div className="relative z-30 max-w-7xl mx-auto px-6 md:px-38 pt-6 pb-24 md:py-28">
+        <div className="max-w-xl mx-auto md:mx-0 text-center md:text-left">
+          <h2 className="text-accent text-[20px] md:text-[24px] leading-tight font-medium mb-4 md:mb-5">
             {title}
           </h2>
 
-          <p className="text-black text-[14px] leading-relaxed mb-8">
+          <p className="text-black text-[13px] md:text-[14px] leading-relaxed mb-6 md:mb-8">
             {description}
           </p>
 
           {buttonText && (
             <button
               onClick={onButtonClick}
-              className="bg-accent text-white px-8 py-3 rounded-full text-sm hover:opacity-90 transition"
+              className="bg-accent text-white px-8 py-3 rounded-full text-sm hover:opacity-90 transition mx-auto md:mx-0"
             >
               {buttonText}
             </button>
