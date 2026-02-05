@@ -42,9 +42,7 @@ export default function About({
 
           {/* Right Content */}
           <div>
-            <h2 className="text-accent text-[24px] font-medium mb-4">
-              {title}
-            </h2>
+            <h2 className="text-[24px] font-medium mb-4">{title}</h2>
 
             <p className="text-black text-[14px] leading-relaxed mb-6">
               {description}

@@ -12,7 +12,7 @@ export default function DiabetesCareSection() {
       {/* Top Heading */}
       <div className="container">
         <div className="text-center mb-20">
-          <h2 className="text-accent text-[20px] mb-2">Diabetes Care</h2>
+          <h2 className="text-accent text-[24px] mb-2">Diabetes Care</h2>
           <p className="text-sm max-w-xl mx-auto">
             Managing diabetes is about more than blood sugar. It's about your
             overall hormonal balance.
@@ -52,13 +52,15 @@ export default function DiabetesCareSection() {
             </p>
           </div>
 
-          <Image
-            src="/images/diabetes/pediatric.webp"
-            alt="Pediatric"
-            width={520}
-            height={360}
-            className="rounded-lg"
-          />
+          <div className="flex justify-center">
+            <Image
+              src="/images/diabetes/pediatric.webp"
+              alt="Pediatric"
+              width={520}
+              height={360}
+              className="rounded-lg"
+            />
+          </div>
         </div>
       </div>
       <div className="md:mb-10 mb-5">
@@ -73,13 +75,15 @@ export default function DiabetesCareSection() {
       <div className="container">
         {/* Adult */}
         <div className="grid md:grid-cols-2 gap-16 items-center md:mb-10 mb-5">
-          <Image
-            src="/images/diabetes/adult.webp"
-            alt="Adult"
-            width={520}
-            height={360}
-            className="rounded-lg"
-          />
+          <div className="flex justify-center">
+            <Image
+              src="/images/diabetes/adult.webp"
+              alt="Adult"
+              width={520}
+              height={360}
+              className="rounded-lg"
+            />
+          </div>
 
           <div>
             <h3 className="text-accent font-bold text-[16px] mb-3">
@@ -152,13 +156,15 @@ export default function DiabetesCareSection() {
             </p>
           </div>
 
-          <Image
-            src="/images/diabetes/senior.webp"
-            alt="Senior"
-            width={520}
-            height={360}
-            className="rounded-lg"
-          />
+          <div className="flex justify-center">
+            <Image
+              src="/images/diabetes/senior.webp"
+              alt="Senior"
+              width={520}
+              height={360}
+              className="rounded-lg"
+            />
+          </div>
         </div>
       </div>
     </section>

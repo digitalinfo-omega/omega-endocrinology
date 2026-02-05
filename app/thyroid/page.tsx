@@ -18,7 +18,7 @@ const page = () => {
       />
       <About
         breadcrumb="Thyroid Disorders"
-        image="/images/diabetes/about-image.webp"
+        image="/images/thyroid/about-image.webp"
         title="What are Thyroid Disorders?"
         description="Thyroid disorders are conditions that affect the thyroid gland, a small butterfly-shaped gland in the neck responsible for regulating metabolism, energy production, and overall body functions. They can cause a range of health problems if left untreated."
         bullets={[

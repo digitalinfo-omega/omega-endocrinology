@@ -28,7 +28,7 @@ const PCOSInfoGrid: FC<PCOSInfoGridProps> = ({
             {heading}
           </h2>
 
-          <p className="text-[#6B7280] text-sm max-w-[720px] mx-auto leading-relaxed">
+          <p className="text-[#6B7280] text-sm max-w-180 mx-auto leading-relaxed">
             {subheading}
           </p>
         </div>
@@ -41,13 +41,13 @@ const PCOSInfoGrid: FC<PCOSInfoGridProps> = ({
               className="bg-[#EDF7F7] rounded-2xl px-8 py-10 text-center flex flex-col items-center"
             >
               {/* Icon wrapper */}
-              <div className="mb-6 flex items-center justify-center w-14 h-14 rounded-xl bg-[#e5f3f4]">
+              <div className="mb-6 flex items-center justify-center w-11 h-11 rounded-xl bg-[#e5f3f4]">
                 {card.icon}
               </div>
 
               <h3 className="text-sm font-semibold mb-3">{card.title}</h3>
 
-              <p className="text-[13px] text-[#6B7280] leading-relaxed max-w-[220px]">
+              <p className="text-[13px] text-[#6B7280] leading-relaxed max-w-55">
                 {card.description}
               </p>
             </div>

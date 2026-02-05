@@ -38,7 +38,7 @@ export default function WhyChooseOmega({ heading, cards }: Props) {
 
               <div className="w-full h-px bg-white/50 my-14" />
               <div className="mt-6">
-                <p className="text-[11px] opacity-90">{card.footer}</p>
+                <p className="text-[14px] opacity-90">{card.footer}</p>
               </div>
             </div>
           ))}
