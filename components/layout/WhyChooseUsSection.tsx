@@ -54,7 +54,7 @@ export default function WhyChooseUsSection() {
             </button>
           </div>
         </div>
-        <div className="absolute bottom-18 left-[45%]">
+        <div className="absolute md:bottom-18 bottom-10 md:left-[45%] left-3">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="25"
@@ -68,7 +68,7 @@ export default function WhyChooseUsSection() {
             />
           </svg>
         </div>
-        <div className="absolute top-18 right-1/12">
+        <div className="absolute md:top-18 top-10 right-1/12">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="25"

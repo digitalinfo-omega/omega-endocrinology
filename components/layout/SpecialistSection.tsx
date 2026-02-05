@@ -22,7 +22,7 @@ const SpecialistSection = () => {
               />
             </div>
 
-            <h3 className="text-secondary text-[24px] font-bold mb-2">
+            <h3 className="text-secondary md:text-[24px] text-[18px] font-bold mb-2">
               DR SUDEEP REDDY GANDRA
             </h3>
 
@@ -33,7 +33,7 @@ const SpecialistSection = () => {
           </div>
 
           <div>
-            <h3 className="text-secondary text-[24px] font-bold mb-3">
+            <h3 className="text-secondary md:text-[24px] text-[18px] font-bold mb-3">
               DR SUDEEP REDDY GANDRA
             </h3>
 
