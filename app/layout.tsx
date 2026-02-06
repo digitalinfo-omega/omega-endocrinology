@@ -16,6 +16,7 @@ import WhatWeOffer from "@/components/layout/WhatWeOffer";
 import { Toaster } from "sonner";
 import { QueryClient } from "@tanstack/react-query";
 import ReactQueryProvider from "@/components/providers/ReactQueryProvider";
+import ModernMachine from "@/components/layout/ModernMachine";
 
 const satoshi = localFont({
   src: [
@@ -61,6 +62,7 @@ export default function RootLayout({
           {children}
           <OurCenters />
           <WhatWeOffer />
+          <ModernMachine />
           <RequestCallbackSection />
           <LetTalkQuestions title="Let’s Tak Any Questions" items={questions} />
           <Emergency />
