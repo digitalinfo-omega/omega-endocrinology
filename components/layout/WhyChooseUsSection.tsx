@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { AnimatedCounter } from "../helpers/AnimatedCounter";
 
 export default function WhyChooseUsSection() {
   return (
@@ -102,7 +103,9 @@ function Stat({
         bordered ? "sm:border-l border-t sm:border-t-0" : ""
       }`}
     >
-      <p className="text-accent text-[24px] font-bold mb-2">{value}</p>
+      <p className="text-accent text-[24px] font-bold mb-2">
+        <AnimatedCounter value={value} />
+      </p>
       <p className="text-[14px] text-black">{label}</p>
     </div>
   );

@@ -9,7 +9,7 @@ const OurCenters = () => {
   const [active, setActive] = useState(centers[0]);
 
   return (
-    <section className="py-10 md:py-20">
+    <section className="pb-10 md:pb-20">
       <div className="container mx-auto px-4">
         <h2 className="text-center text-accent text-[24px] font-bold mb-4">
           Our Centers

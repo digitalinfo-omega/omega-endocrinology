@@ -1,14 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
 import { LetTalkQuestionsProps } from "../constants/LetTalkQuestions";
-import { Minus, Plus } from "lucide-react";
 import CustomAccordion from "../helpers/CustomAccordion";
 
 const LetTalkQuestions = ({ title, items }: LetTalkQuestionsProps) => {

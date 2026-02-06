@@ -7,8 +7,6 @@ import Footer from "@/components/layout/Footer";
 import AOSProvider from "@/components/providers/AOSProvider";
 import MobileBottomNav from "@/components/layout/MobileBottomNav";
 import BookAppointment from "@/components/layout/BookAppointment";
-import { questions } from "@/components/constants/LetTalkQuestions";
-import LetTalkQuestions from "@/components/layout/LetTalkQuestions";
 import OurCenters from "@/components/layout/OurCenters";
 import Emergency from "@/components/layout/Emergency";
 import RequestCallbackSection from "@/components/layout/RequestCallbackSection";
@@ -17,6 +15,7 @@ import { Toaster } from "sonner";
 import { QueryClient } from "@tanstack/react-query";
 import ReactQueryProvider from "@/components/providers/ReactQueryProvider";
 import ModernMachine from "@/components/layout/ModernMachine";
+import LetTalkQuestionsWrapper from "@/components/helpers/LetTalkQuestionsWrapper";
 
 const satoshi = localFont({
   src: [
@@ -64,7 +63,7 @@ export default function RootLayout({
           <WhatWeOffer />
           <ModernMachine />
           <RequestCallbackSection />
-          <LetTalkQuestions title="Let’s Tak Any Questions" items={questions} />
+          <LetTalkQuestionsWrapper />
           <Emergency />
           <Footer />
           <BookAppointment />

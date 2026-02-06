@@ -3,7 +3,7 @@ import Image from "next/image";
 const Emergency = () => {
   return (
     <section>
-      <div className="relative w-full h-180 sm:h-125">
+      <div className="relative w-full h-180 sm:h-133">
         <Image
           src="/images/ambalance.jpg"
           alt="Ambulance"

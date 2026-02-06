@@ -82,33 +82,57 @@ const HeroSection: FC = () => {
             <div className="flex flex-wrap gap-4 pt-4">
               <Link
                 href=""
-                className="rounded-[10px] bg-secondary px-8 py-4 text-[16px] font-semibold text-white shadow-lg transition-all hover:scale-105"
+                className="
+      inline-flex items-center justify-center
+      min-h-[56px]
+      rounded-[10px] bg-secondary px-8 text-[16px] font-semibold leading-none
+      text-white shadow-lg transition-all hover:scale-105
+    "
               >
                 Get In Touch
               </Link>
 
               <Link
                 href=""
-                className="group flex items-center gap-2 rounded-[10px] border-2 border-accent px-8 py-4 text-[16px] font-semibold text-accent transition-all hover:bg-accent/50"
+                className="
+      relative overflow-hidden group
+      inline-flex items-center justify-center gap-2
+      min-h-[56px]
+      rounded-[10px]
+      border-2 border-accent px-8 text-[16px] font-semibold leading-none
+      text-accent
+    "
               >
-                Explore Our Services
-                <span className="transition-transform group-hover:translate-x-1">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="30"
-                    height="24"
-                    viewBox="0 0 30 24"
-                    fill="none"
-                  >
-                    <path d="M9 6L15 12L9 18" stroke="#E56E1B" />
-                    <path d="M15 6L21 12L15 18" stroke="#E56E1B" />
-                  </svg>
+                {/* Hover blocks */}
+                <span className="absolute inset-0 z-0 flex">
+                  <span className="w-1/4 bg-accent -translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-linear" />
+                  <span className="w-1/4 bg-accent -translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-linear delay-150" />
+                  <span className="w-1/4 bg-accent -translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-linear delay-300" />
+                  <span className="w-1/4 bg-accent -translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-linear delay-450" />
+                </span>
+
+                {/* Content */}
+                <span className="relative z-10 flex items-center gap-2 transition-colors duration-300 group-hover:text-white">
+                  Explore Our Services
+                  <span className="transition-transform duration-300 group-hover:translate-x-1">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="30"
+                      height="24"
+                      viewBox="0 0 30 24"
+                      fill="none"
+                      className="stroke-current"
+                    >
+                      <path d="M9 6L15 12L9 18" />
+                      <path d="M15 6L21 12L15 18" />
+                    </svg>
+                  </span>
                 </span>
               </Link>
             </div>
           </div>
 
-          <div className="relative w-full h-80">
+          <div className="relative w-full md:h-130.25 h-86.5">
             {/* You can later replace this with your actual image path */}
             <Image
               src="/images/digestive.webp"
