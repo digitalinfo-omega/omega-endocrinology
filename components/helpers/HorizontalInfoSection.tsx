@@ -53,29 +53,29 @@ const HorizontalInfoSection: FC<HorizontalInfoSectionProps> = ({
                 style={{ background: rowBg }}
                 className="rounded-xl px-6 py-6 flex flex-col md:flex-row items-center gap-6"
               >
-                {/* Icon Left */}
+                {/* Icon (mobile top, desktop conditional) */}
                 {iconLeft && (
                   <div
                     style={{ background: iconBg, color: accentColor }}
-                    className="w-12 h-12 rounded-md flex items-center justify-center shrink-0"
+                    className="w-12 h-12 rounded-md flex items-center justify-center shrink-0 p-3 md:order-1 order-1"
                   >
                     {row.icon}
                   </div>
                 )}
 
                 {/* Text */}
-                <div className="flex-1 text-center md:text-left">
+                <div className="flex-1 text-center md:text-left order-2">
                   <h3 className="font-semibold mb-2">{row.title}</h3>
                   <p className="text-sm text-gray-600 leading-relaxed">
                     {row.description}
                   </p>
                 </div>
 
-                {/* Icon Right */}
+                {/* Icon Right (desktop) */}
                 {!iconLeft && (
                   <div
                     style={{ background: iconBg, color: accentColor }}
-                    className="w-12 h-12 rounded-md flex items-center justify-center shrink-0"
+                    className="w-12 h-12 rounded-md flex items-center justify-center shrink-0 p-3 md:order-3 order-1"
                   >
                     {row.icon}
                   </div>
