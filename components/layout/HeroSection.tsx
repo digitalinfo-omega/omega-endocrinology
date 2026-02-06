@@ -79,13 +79,13 @@ const HeroSection: FC = () => {
             </p>
 
             {/* Buttons */}
-            <div className="flex flex-wrap gap-4 pt-4">
+            <div className="flex md:justify-start justify-center flex-wrap gap-4 pt-4">
               <Link
                 href=""
                 className="
       inline-flex items-center justify-center
-      min-h-[56px]
-      rounded-[10px] bg-secondary px-8 text-[16px] font-semibold leading-none
+      min-h-14
+      rounded-[10px] bg-secondary px-20 md:px-8 text-[16px] font-semibold leading-none
       text-white shadow-lg transition-all hover:scale-105
     "
               >
@@ -97,7 +97,7 @@ const HeroSection: FC = () => {
                 className="
       relative overflow-hidden group
       inline-flex items-center justify-center gap-2
-      min-h-[56px]
+      min-h-14
       rounded-[10px]
       border-2 border-accent px-8 text-[16px] font-semibold leading-none
       text-accent

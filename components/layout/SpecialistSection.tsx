@@ -11,8 +11,11 @@ const SpecialistSection = () => {
         </h2>
 
         <div className="bg-white rounded-2xl p-6 md:p-12 grid grid-cols-1 md:grid-cols-[380px_1fr] gap-8 md:gap-12 items-center">
-          <div className="flex flex-col items-center text-center hover:bg-[#48ACBB1A] transition-colors duration-300">
-            <div className="w-full flex justify-center mb-4">
+          <div className="relative overflow-hidden flex flex-col items-center text-center group">
+            {/* Center expand background */}
+            <span className="absolute inset-0 bg-[#48ACBB1A] scale-0 group-hover:scale-100 transition-transform duration-500 ease-out origin-center z-0" />
+
+            <div className="relative z-10 w-full flex justify-center mb-4">
               <Image
                 src="/images/specialist.png"
                 alt="Dr Sudeep Reddy Gandra"
@@ -22,11 +25,11 @@ const SpecialistSection = () => {
               />
             </div>
 
-            <h3 className="text-secondary md:text-[24px] text-[18px] font-bold mb-2">
+            <h3 className="relative z-10 text-secondary md:text-[24px] text-[18px] font-bold mb-2">
               DR SUDEEP REDDY GANDRA
             </h3>
 
-            <p className="text-[18px] text-black">
+            <p className="relative z-10 text-[18px] text-black">
               Endocrinologist <span className="text-accent">|</span> MBBS, MD,
               DM ENDOCRINOLOGY
             </p>

@@ -54,7 +54,7 @@ const OurCenters = () => {
         >
           <div className="flex justify-center items-center w-full lg:basis-[30%] basis-full">
             {/* Kept original dimensions as requested */}
-            <div className="w-101.25 h-93.5 overflow-hidden rounded-lg">
+            <div className="md:w-101.25 md:h-93.5 w-full h-full overflow-hidden rounded-lg">
               <img
                 src={active.image}
                 alt={active.heading}

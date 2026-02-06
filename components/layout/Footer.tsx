@@ -5,6 +5,7 @@ import {
   Linkedin,
   Mail,
   Phone,
+  PhoneCall,
   Youtube,
 } from "lucide-react";
 
@@ -835,9 +836,48 @@ const Footer = () => {
         </div>
       </section>
       <div>
-        <div className="text-[14px] text-center bg-[#000] text-[#fff] py-2 xs:pb-14 mt-3 font-omega-typography-text-sm-regular-font-family">
+        <div className="w-full bg-secondary px-6 py-2">
+          <div className="mx-auto flex max-w-7xl items-center justify-between">
+            {/* Left: Social */}
+            <div className="flex items-center gap-3 text-white">
+              <span className="font-semibold">Social Media :</span>
+
+              <a href="#" className="hover:opacity-80 transition">
+                <Facebook size={16} />
+              </a>
+
+              <a href="#" className="hover:opacity-80 transition">
+                <Instagram size={16} />
+              </a>
+
+              <a href="#" className="hover:opacity-80 transition">
+                <Linkedin size={16} />
+              </a>
+
+              <a href="#" className="hover:opacity-80 transition">
+                <Youtube size={16} />
+              </a>
+            </div>
+
+            {/* Right: Emergency */}
+            <div className="flex items-center gap-3 text-white">
+              <div className="flex h-8 w-8 items-center justify-center rounded-full bg-accent">
+                <PhoneCall size={16} />
+              </div>
+
+              <div className="leading-tight">
+                <p className="text-xs font-medium uppercase">
+                  Daily 24H Emergency
+                </p>
+                <p className="font-semibold">9849022121</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="text-[14px] text-center bg-black text-white py-2 font-omega-typography-text-sm-regular-font-family">
           © Copyright 2025 -{" "}
-          <Link className="text-[#fff] no-underline" href="">
+          <Link className="text-white no-underline" href="">
             Omega Hospitals - A Morgan Stanley Enterprise. All Rights Reserved.
           </Link>
         </div>

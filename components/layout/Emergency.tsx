@@ -19,7 +19,7 @@ const Emergency = () => {
           priority
         />
       </div>
-      {/* <div className="bg-[#e56e1b] w-full py-10 px-4">
+      <div className="bg-accent w-full py-10 px-4">
         <div
           className="
       max-w-7xl mx-auto
@@ -78,7 +78,7 @@ const Emergency = () => {
             </div>
           </div>
         </div>
-      </div> */}
+      </div>
     </section>
   );
 };

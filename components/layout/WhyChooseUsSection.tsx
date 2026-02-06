@@ -10,7 +10,7 @@ export default function WhyChooseUsSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* LEFT IMAGE COLLAGE */}
           <div className="w-full flex justify-center">
-            <div className="relative w-full max-w-130 h-130 rounded-[32px] overflow-hidden">
+            <div className="relative w-full max-w-130 h-130 rounded-[32px] overflow-hidden hover:scale-105 transition duration-200">
               <Image
                 src="/images/why-choose-us.webp"
                 alt="Why choose us"
