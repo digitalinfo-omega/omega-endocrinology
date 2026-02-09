@@ -36,12 +36,10 @@ const LetTalkQuestions = ({ title, items }: LetTalkQuestionsProps) => {
                   </defs>
                 </svg>
               </div>
-              <span className="text-accent text-[18px] font-bold">
-                Ask Question
-              </span>
+              <span className="text-accent para font-bold">Ask Question</span>
             </div>
 
-            <h2 className="text-[24px] font-bold mb-6">{title}</h2>
+            <h2 className="heading font-bold mb-6">{title}</h2>
 
             <CustomAccordion items={items} />
           </div>

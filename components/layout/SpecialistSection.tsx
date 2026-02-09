@@ -6,7 +6,7 @@ const SpecialistSection = () => {
   return (
     <section className="py-10 md:py-20 bg-[#F9FAFF]">
       <div className="container">
-        <h2 className="text-center text-accent text-[24px] font-bold underline underline-offset-8 mb-8 md:mb-12">
+        <h2 className="text-center text-accent heading font-bold underline underline-offset-8 mb-8 md:mb-12">
           Our Endocrinology Specialist
         </h2>
 
@@ -25,18 +25,18 @@ const SpecialistSection = () => {
               />
             </div>
 
-            <h3 className="relative z-10 text-secondary md:text-[24px] text-[18px] font-bold mb-2">
+            <h3 className="relative z-10 text-secondary heading font-bold mb-2">
               DR SUDEEP REDDY GANDRA
             </h3>
 
-            <p className="relative z-10 text-[18px] text-black">
+            <p className="relative z-10 para text-black">
               Endocrinologist <span className="text-accent">|</span> MBBS, MD,
               DM ENDOCRINOLOGY
             </p>
           </div>
 
           <div>
-            <h3 className="text-secondary md:text-[24px] text-[18px] font-bold mb-3">
+            <h3 className="text-secondary heading font-bold mb-3">
               DR SUDEEP REDDY GANDRA
             </h3>
 
@@ -45,7 +45,7 @@ const SpecialistSection = () => {
               DM ENDOCRINOLOGY
             </p>
 
-            <p className="text-[18px] text-accent mb-6">
+            <p className="para text-accent mb-6">
               10 Years Experience | Gachibowli
             </p>
 

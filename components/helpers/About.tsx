@@ -22,7 +22,7 @@ export default function About({
     <section className="py-10 md:py-20">
       <div className="container">
         {/* Breadcrumb */}
-        <p className="text-sm mb-8">
+        <p className="sm-para mb-8">
           <Link href="/">Home</Link> /{" "}
           <span className="text-accent">{breadcrumb}</span>
         </p>
@@ -42,9 +42,9 @@ export default function About({
 
           {/* Right Content */}
           <div>
-            <h2 className="text-[24px] font-medium mb-4">{title}</h2>
+            <h2 className="heading font-medium mb-4">{title}</h2>
 
-            <p className="text-black text-[14px] leading-relaxed mb-6">
+            <p className="text-black sm-para leading-relaxed mb-6">
               {description}
             </p>
 
@@ -67,7 +67,7 @@ export default function About({
                     />
                   </svg>
 
-                  <p className="text-[14px] text-black">{item}</p>
+                  <p className="sm-para text-black">{item}</p>
                 </li>
               ))}
             </ul>

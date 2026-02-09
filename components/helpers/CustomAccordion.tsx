@@ -28,11 +28,11 @@ export default function CustomAccordion({ items }: AccordionProps) {
               onClick={() => setOpenIndex(isOpen ? null : index)}
               className="flex w-full items-center justify-between text-left"
             >
-              <span className="text-[18px] font-medium">
+              <span className="para font-medium">
                 {index + 1}. {item.question}
               </span>
 
-              <span className="text-accent text-xl font-light">
+              <span className="text-accent para font-light">
                 {isOpen ? <Minus /> : <Plus />}
               </span>
             </button>

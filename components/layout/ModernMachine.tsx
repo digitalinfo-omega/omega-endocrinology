@@ -198,21 +198,21 @@ const ModernMachine = () => {
               {/* LEFT CURVE GRADIENT */}
               <div
                 className="hidden lg:block absolute -left-[33%] top-1/2 -translate-y-1/2
-      w-[1200px] h-[1200px] rounded-full
-      bg-gradient-to-br from-[#CFEFF3] via-[#EAF7F9] to-white -z-10"
+      w-300 h-300 rounded-full
+      bg-linear-to-br from-[#CFEFF3] via-[#EAF7F9] to-white -z-10"
               />
 
               {/* LEFT CURVE BORDER */}
               <div
                 className="hidden lg:block absolute -left-[33%] top-1/2 -translate-y-1/2
-      w-[1200px] h-[1200px]
-      rounded-full border-[15px] border-[#2AA0AE] -z-10"
+      w-300 h-300
+      rounded-full border-15 border-[#2AA0AE] -z-10"
               />
 
               {/* SLIDE CONTENT */}
               <div className="relative z-10 flex flex-col lg:grid lg:grid-cols-2 gap-6 md:gap-8 lg:gap-20 px-4 md:px-12 lg:px-24 py-8 lg:py-12">
                 {/* IMAGE */}
-                <div className="relative flex items-center justify-center w-full h-62.5 md:h-87.5 lg:h-[500px] order-1">
+                <div className="relative flex items-center justify-center w-full h-62.5 md:h-87.5 lg:h-125 order-1">
                   <Image
                     src={s.image}
                     alt={s.title}

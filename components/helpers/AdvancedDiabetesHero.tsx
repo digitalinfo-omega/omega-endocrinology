@@ -27,7 +27,7 @@ export default function AdvancedDiabetesHero({
       <div className="absolute inset-0 bg-linear-to-r from-[#eaf7f9] via-[#cfeff4] to-[#7fd0dc]" />
 
       {/* Wave */}
-      <div className="absolute inset-x-0 bottom-0 md:left-0 md:top-0 md:bottom-auto h-[307px] md:h-full md:w-[42%] z-10">
+      <div className="absolute inset-x-0 bottom-0 md:left-0 md:top-0 md:bottom-auto h-76.75 md:h-full md:w-[42%] z-10">
         <Image
           src={leftWave}
           alt="Wave"
@@ -44,7 +44,7 @@ export default function AdvancedDiabetesHero({
           mx-auto md:mx-0
           mt-6 md:mt-0
           md:right-12 md:top-7
-          h-[220px] md:h-full
+          h-55 md:h-full
           z-20
         "
         style={{ width }}
@@ -61,11 +61,11 @@ export default function AdvancedDiabetesHero({
       {/* Content */}
       <div className="relative z-30 max-w-7xl mx-auto px-6 md:px-38 pt-6 pb-24 md:py-28">
         <div className="max-w-xl mx-auto md:mx-0 text-center md:text-left">
-          <h2 className="text-accent text-[20px] md:text-[24px] leading-tight font-medium mb-4 md:mb-5">
+          <h2 className="text-accent heading leading-tight font-medium mb-4 md:mb-5">
             {title}
           </h2>
 
-          <p className="text-black text-[13px] md:text-[14px] leading-relaxed mb-6 md:mb-8">
+          <p className="text-black sm-para leading-relaxed mb-6 md:mb-8">
             {description}
           </p>
 

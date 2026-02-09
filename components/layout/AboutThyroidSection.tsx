@@ -30,15 +30,15 @@ const AboutSection: FC<AboutSectionProps> = ({
           {/* Right - Content */}
           <div className="space-y-8 md:space-y-10">
             <div className="space-y-5 md:space-y-6">
-              <span className="inline-block text-accent uppercase tracking-wider font-medium text-[18px]">
+              <span className="inline-block text-accent uppercase tracking-wider font-medium md:text-[24px] text-[18px]">
                 ABOUT US
               </span>
 
-              <h2 className="text-[24px] font-bold leading-tight text-black dark:text-white">
+              <h2 className="md:text-[24px] text-[18px] font-bold leading-tight text-black dark:text-white">
                 {title}
               </h2>
 
-              <p className="text-[18px] text-black dark:text-gray-300 leading-relaxed">
+              <p className="md:text-[18px] text-[16px] text-black dark:text-gray-300 leading-relaxed">
                 {description}
               </p>
             </div>

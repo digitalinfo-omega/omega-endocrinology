@@ -11,11 +11,11 @@ const OurCenters = () => {
   return (
     <section className="pb-10 md:pb-20">
       <div className="container mx-auto px-4">
-        <h2 className="text-center text-accent text-[24px] font-bold mb-4">
+        <h2 className="text-center text-accent heading font-bold mb-4">
           Our Centers
         </h2>
 
-        <p className="text-center text-[16px] mb-8 md:max-w-[50%] w-full mx-auto">
+        <p className="text-center para mb-8 md:max-w-[50%] w-full mx-auto">
           Set up in 2009 and present across 5 states, 10 cities & over 11
           centers, Omega Hospitals is the most trusted clinic chain in India
         </p>
@@ -26,25 +26,30 @@ const OurCenters = () => {
         >
           {/* Changed grid to flex for mobile scrolling, kept grid for desktop */}
           <div className="flex lg:grid lg:grid-cols-11 gap-2 overflow-x-auto lg:overflow-visible pb-2 lg:pb-0 scrollbar-hide">
-            {centers.map((center) => (
-              <button
-                key={center.name}
-                onClick={() => setActive(center)}
-                // Added flex-shrink-0 to prevent squishing, flex/justify/items-center for centering text
-                className={`relative px-5 py-3 rounded-lg text-[16px] shrink-0 flex items-center justify-center text-center transition-colors duration-300 ${
-                  active.name === center.name
-                    ? "bg-secondary text-white"
-                    : "text-black hover:bg-black/5"
-                }`}
-              >
-                <span className="whitespace-nowrap">{center.name}</span>
+            {centers.map((center) => {
+              const isActive = active.name === center.name;
 
-                {active.name === center.name && (
-                  // Centered the indicator arrow for better stability
-                  <span className="absolute right-1.25 -translate-x-1/2 -bottom-1.5 w-3 h-3 bg-secondary rotate-45" />
-                )}
-              </button>
-            ))}
+              return (
+                <button
+                  key={center.name}
+                  onClick={() => setActive(center)}
+                  className={`relative px-5 py-3 rounded-lg text-[16px] shrink-0 flex items-center justify-center text-center
+          transition-all duration-300
+          ${isActive ? "bg-secondary text-white" : "text-black hover:bg-black/5"}
+        `}
+                >
+                  <span className="whitespace-nowrap">{center.name}</span>
+
+                  {/* Indicator Arrow (always rendered) */}
+                  <span
+                    className={`absolute right-1.25 -translate-x-1/2 -bottom-1.5 w-3 h-3 bg-secondary rotate-45
+            transition-all duration-300
+            ${isActive ? "opacity-100 scale-100" : "opacity-0 scale-75"}
+          `}
+                  />
+                </button>
+              );
+            })}
           </div>
         </div>
 
@@ -63,16 +68,16 @@ const OurCenters = () => {
             </div>
           </div>
 
-          <div className="lg:basis-[70%] basis-full w-full">
-            <h3 className="text-secondary text-[24px] font-medium mb-4">
+          <div className="lg:basis-[70%] basis-full w-full flex flex-col justify-between md:h-90 h-full">
+            <h3 className="text-secondary heading font-medium">
               {active.heading}
             </h3>
 
-            <p className="font-bold text-[16px] mb-4">{active.subHeading}</p>
+            {active.subHeading && (
+              <p className="font-bold text-[16px]">{active.subHeading}</p>
+            )}
 
-            <p className="text-[15px] leading-relaxed mb-8">
-              {active.description}
-            </p>
+            <p className="text-[15px] leading-relaxed">{active.description}</p>
 
             <div className="flex flex-col md:flex-row gap-4">
               <button className="flex items-center justify-center gap-2 bg-accent text-white text-[14px] px-6 py-3 rounded-lg whitespace-nowrap">

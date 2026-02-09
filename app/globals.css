@@ -54,6 +54,15 @@
   .flex-between {
     @apply flex justify-between items-center;
   }
+  .heading {
+    @apply md:text-[24px] text-[18px];
+  }
+  .para {
+    @apply md:text-[18px] text-[16px];
+  }
+  .sm-para {
+    @apply text-[13px] md:text-[14px];
+  }
   .text-omega {
     @apply text-[#e56e1b] font-sans;
   }

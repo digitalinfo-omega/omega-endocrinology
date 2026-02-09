@@ -16,7 +16,7 @@ const HeroSection: FC = () => {
           {/* Left Column - Text Content */}
           <div className="flex flex-col items-start space-y-8 lg:space-y-10">
             {/* Top badge */}
-            <div className="relative inline-flex items-center gap-2.5 rounded-full border border-secondary p-2 text-sm font-medium shadow-sm backdrop-blur-sm bg-white">
+            <div className="relative inline-flex items-center gap-2.5 rounded-full border border-secondary p-2 text-[16px] font-medium shadow-sm backdrop-blur-sm bg-white">
               <div className="absolute right-0 -top-4.5">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

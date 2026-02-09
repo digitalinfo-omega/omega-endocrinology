@@ -19,7 +19,7 @@ export default function WhyChooseOmega({ heading, cards }: Props) {
     >
       <div className="container">
         {/* Heading */}
-        <p className="text-sm mb-8">{heading}</p>
+        <p className="sm-para mb-8">{heading}</p>
 
         {/* Cards */}
         <div className="grid md:grid-cols-3 gap-6">
@@ -29,11 +29,9 @@ export default function WhyChooseOmega({ heading, cards }: Props) {
               className="bg-accent rounded-xl p-6 text-white flex flex-col justify-between"
             >
               <div>
-                <h4 className="text-sm font-medium mb-12">{card.title}</h4>
+                <h4 className="sm-para font-medium mb-12">{card.title}</h4>
 
-                <p className="text-[20px] my-5 leading-relaxed">
-                  {card.description}
-                </p>
+                <p className="para my-5 leading-relaxed">{card.description}</p>
               </div>
 
               <div className="w-full h-px bg-white/50 my-14" />

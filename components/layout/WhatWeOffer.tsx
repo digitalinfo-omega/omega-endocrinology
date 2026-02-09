@@ -6,7 +6,7 @@ const WhatWeOffer = () => {
   return (
     <section className="py-10 md:py-20 border-t-accent border">
       <div className="container">
-        <h2 className="text-center text-accent text-[24px] font-bold mb-10">
+        <h2 className="text-center text-accent heading font-bold mb-10">
           What we offer at Omega Hospitals
         </h2>
 
@@ -20,7 +20,7 @@ const WhatWeOffer = () => {
                 {item.id}
               </div>
 
-              <p className="text-[16px] text-black leading-relaxed pr-8">
+              <p className="para text-black leading-relaxed pr-8">
                 {item.text}
               </p>
             </div>

@@ -10,11 +10,11 @@ const OurServicesSection: FC<OurServicesSectionProps> = ({ services }) => {
       <div className="container">
         {/* Header */}
         <div className="text-center mb-14 md:mb-16 lg:mb-20">
-          <span className="inline-block text-accent uppercase tracking-wider font-bold text-[24px] mb-3">
+          <span className="inline-block text-accent uppercase tracking-wider font-bold md:text-[24px] text-[18px] mb-3">
             OUR SERVICES
           </span>
 
-          <p className="text-[18px] text-black max-w-4xl mx-auto leading-relaxed">
+          <p className="md:text-[18px] text-[16px] text-black max-w-4xl mx-auto leading-relaxed">
             Our expert doctors are trained to identify the root cause of
             hormonal imbalances and offer personalized treatment to help bring
             your hormones back into balance
@@ -26,7 +26,7 @@ const OurServicesSection: FC<OurServicesSectionProps> = ({ services }) => {
           {services.map((service, index) => (
             <div
               key={index}
-              className="group bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-2xl p-6 md:p-7 hover:bg-accent/20 transition-shadow duration-300 flex flex-col h-full"
+              className="group bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-2xl p-6 md:p-7 hover:bg-[#EF812F1A] hover:border-[#EF812F66] hover:border-0.63 transition-shadow duration-300 flex flex-col h-full"
             >
               {/* Icon placeholder - you will replace this div with your SVG */}
               <div className="mb-2 w-12 h-12 flex items-center justify-center text-accent">
