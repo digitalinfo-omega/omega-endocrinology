@@ -1,4 +1,3 @@
-// components/AboutSection.tsx
 import type { FC } from "react";
 
 interface AboutSectionProps {
@@ -18,35 +17,71 @@ const AboutSection: FC<AboutSectionProps> = ({
     <section className="py-10 md:py-20 bg-white dark:bg-gray-950">
       <div className="container">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 xl:gap-16 items-center">
-          {/* Left - Image placeholder only */}
-          <div className="relative w-full">
+          {/* Left - Image */}
+          <div
+            className="relative w-full"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="100"
+          >
             <img
-              src="/images/throat.webp"
-              alt=""
+              src={imagePlaceholderText}
+              alt="About us illustration"
               className="h-full w-full object-cover"
             />
           </div>
 
           {/* Right - Content */}
-          <div className="space-y-8 md:space-y-10">
+          <div
+            className="space-y-8 md:space-y-10"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+          >
             <div className="space-y-5 md:space-y-6">
-              <span className="inline-block text-accent uppercase tracking-wider font-medium md:text-[24px] text-[18px]">
+              <span
+                className="inline-block text-accent uppercase tracking-wider font-medium md:text-[24px] text-[18px]"
+                data-aos="fade-up"
+                data-aos-duration="800"
+                data-aos-delay="300"
+              >
                 ABOUT US
               </span>
 
-              <h2 className="md:text-[24px] text-[18px] font-bold leading-tight text-black dark:text-white">
+              <h2
+                className="md:text-[40px] text-[28px] font-bold leading-tight text-black dark:text-white"
+                data-aos="fade-up"
+                data-aos-duration="900"
+                data-aos-delay="400"
+              >
                 {title}
               </h2>
 
-              <p className="md:text-[18px] text-[16px] text-black dark:text-gray-300 leading-relaxed">
+              <p
+                className="md:text-[18px] text-[16px] text-black dark:text-gray-300 leading-relaxed"
+                data-aos="fade-up"
+                data-aos-duration="900"
+                data-aos-delay="500"
+              >
                 {description}
               </p>
             </div>
 
             {/* Feature list */}
-            <div className="space-y-4 md:space-y-5">
+            <div
+              className="space-y-4 md:space-y-5"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="600"
+            >
               {features.map((feature, index) => (
-                <div key={index} className="flex items-start gap-3">
+                <div
+                  key={index}
+                  className="flex items-start gap-3"
+                  data-aos="fade-up"
+                  data-aos-duration="800"
+                  data-aos-delay={700 + index * 150}
+                >
                   <div className="mt-1.5 shrink-0">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"

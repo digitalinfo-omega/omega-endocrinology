@@ -1,4 +1,3 @@
-// components/OurServicesSection.tsx
 import { ArrowRight } from "lucide-react";
 import type { FC } from "react";
 import { OurServicesSectionProps } from "../constants/OurServicesSection";
@@ -10,11 +9,20 @@ const OurServicesSection: FC<OurServicesSectionProps> = ({ services }) => {
       <div className="container">
         {/* Header */}
         <div className="text-center mb-14 md:mb-16 lg:mb-20">
-          <span className="inline-block text-accent uppercase tracking-wider font-bold md:text-[24px] text-[18px] mb-3">
+          <span
+            className="inline-block text-accent uppercase tracking-wider font-bold md:text-[24px] text-[18px] mb-3"
+            data-aos="fade-up"
+            data-aos-duration="800"
+          >
             OUR SERVICES
           </span>
 
-          <p className="md:text-[18px] text-[16px] text-black max-w-4xl mx-auto leading-relaxed">
+          <p
+            className="md:text-[18px] text-[16px] text-black max-w-4xl mx-auto leading-relaxed"
+            data-aos="fade-up"
+            data-aos-duration="900"
+            data-aos-delay="150"
+          >
             Our expert doctors are trained to identify the root cause of
             hormonal imbalances and offer personalized treatment to help bring
             your hormones back into balance
@@ -27,10 +35,13 @@ const OurServicesSection: FC<OurServicesSectionProps> = ({ services }) => {
             <div
               key={index}
               className="group bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-2xl p-6 md:p-7 hover:bg-[#EF812F1A] hover:border-[#EF812F66] hover:border-0.63 transition-shadow duration-300 flex flex-col h-full"
+              data-aos="fade-up"
+              data-aos-duration="900"
+              data-aos-delay={300 + index * 120} // staggered entrance
+              data-aos-anchor-placement="top-bottom"
             >
-              {/* Icon placeholder - you will replace this div with your SVG */}
+              {/* Icon placeholder */}
               <div className="mb-2 w-12 h-12 flex items-center justify-center text-accent">
-                {/* SVG goes here later */}
                 <div className="w-10 h-10 flex items-center justify-center text-accent text-xl font-bold">
                   {service.icon}
                 </div>
@@ -47,11 +58,10 @@ const OurServicesSection: FC<OurServicesSectionProps> = ({ services }) => {
               <Link
                 href={service.href}
                 className="group/btn relative overflow-hidden inline-flex items-center justify-between
-    border border-accent p-2 gap-2
-    text-accent hover:text-white
-    font-medium text-sm md:text-base
-    transition-colors w-full
-  "
+                  border border-accent p-2 gap-2
+                  text-accent hover:text-white
+                  font-medium text-sm md:text-base
+                  transition-colors w-full"
               >
                 <span className="relative z-10">Explore more</span>
 
@@ -61,14 +71,14 @@ const OurServicesSection: FC<OurServicesSectionProps> = ({ services }) => {
 
                 <span
                   className="
-      pointer-events-none
-      absolute inset-0
-      bg-accent
-      origin-top-left
-      scale-0
-      transition-transform duration-500
-      group-hover/btn:scale-100
-    "
+                    pointer-events-none
+                    absolute inset-0
+                    bg-accent
+                    origin-top-left
+                    scale-0
+                    transition-transform duration-500
+                    group-hover/btn:scale-100
+                  "
                 />
               </Link>
             </div>

@@ -32,10 +32,27 @@ const HorizontalInfoSection: FC<HorizontalInfoSectionProps> = ({
     <section style={{ background: sectionBg }} className="py-20">
       <div className="max-w-7xl mx-auto px-4">
         {/* Heading */}
-        <div className="text-center max-w-3xl mx-auto mb-12">
-          <h2 className="text-2xl font-semibold mb-4">{heading}</h2>
+        <div
+          className="text-center max-w-3xl mx-auto mb-12"
+          data-aos="fade-up"
+          data-aos-duration="900"
+          data-aos-delay="100"
+        >
+          <h2
+            className="text-2xl font-semibold mb-4"
+            data-aos="fade-up"
+            data-aos-duration="800"
+            data-aos-delay="150"
+          >
+            {heading}
+          </h2>
 
-          <div className="space-y-3 text-gray-600 text-sm leading-relaxed">
+          <div
+            className="space-y-3 text-gray-600 text-sm leading-relaxed"
+            data-aos="fade-up"
+            data-aos-duration="800"
+            data-aos-delay="250"
+          >
             {paragraphs.map((p, i) => (
               <p key={i}>{p}</p>
             ))}
@@ -43,15 +60,19 @@ const HorizontalInfoSection: FC<HorizontalInfoSectionProps> = ({
         </div>
 
         {/* Rows */}
-        <div className="space-y-5">
+        <div className="space-y-5 overflow-hidden">
           {rows.map((row, i) => {
             const iconLeft = i % 2 !== 0;
+            const direction = i % 2 === 0 ? "fade-left" : "fade-right";
 
             return (
               <div
                 key={i}
                 style={{ background: rowBg }}
                 className="rounded-xl px-6 py-6 flex flex-col md:flex-row items-center gap-6"
+                data-aos={direction}
+                data-aos-duration="900"
+                data-aos-delay={400 + i * 180}
               >
                 {/* Icon (mobile top, desktop conditional) */}
                 {iconLeft && (

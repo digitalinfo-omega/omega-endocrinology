@@ -19,23 +19,63 @@ export default function WhyChooseOmega({ heading, cards }: Props) {
     >
       <div className="container">
         {/* Heading */}
-        <p className="sm-para mb-8">{heading}</p>
+        <p
+          className="sm-para mb-8"
+          data-aos="fade-up"
+          data-aos-duration="900"
+          data-aos-delay="100"
+        >
+          {heading}
+        </p>
 
         {/* Cards */}
-        <div className="grid md:grid-cols-3 gap-6">
+        <div
+          className="grid md:grid-cols-3 gap-6"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="200"
+        >
           {cards.map((card, i) => (
             <div
               key={i}
               className="bg-accent rounded-xl p-6 text-white flex flex-col justify-between"
+              data-aos="fade-up"
+              data-aos-duration="900"
+              data-aos-delay={300 + i * 150} // staggered appearance for each card
             >
               <div>
-                <h4 className="sm-para font-medium mb-12">{card.title}</h4>
+                <h4
+                  className="sm-para font-medium mb-12"
+                  data-aos="fade-up"
+                  data-aos-duration="800"
+                  data-aos-delay={400 + i * 150}
+                >
+                  {card.title}
+                </h4>
 
-                <p className="para my-5 leading-relaxed">{card.description}</p>
+                <p
+                  className="para my-5 leading-relaxed"
+                  data-aos="fade-up"
+                  data-aos-duration="800"
+                  data-aos-delay={500 + i * 150}
+                >
+                  {card.description}
+                </p>
               </div>
 
-              <div className="w-full h-px bg-white/50 my-14" />
-              <div className="mt-6">
+              <div
+                className="w-full h-px bg-white/50 my-14"
+                data-aos="fade-up"
+                data-aos-duration="800"
+                data-aos-delay={600 + i * 150}
+              />
+
+              <div
+                className="mt-6"
+                data-aos="fade-up"
+                data-aos-duration="800"
+                data-aos-delay={650 + i * 150}
+              >
                 <p className="text-[14px] opacity-90">{card.footer}</p>
               </div>
             </div>

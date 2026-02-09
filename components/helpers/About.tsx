@@ -22,14 +22,29 @@ export default function About({
     <section className="py-10 md:py-20">
       <div className="container">
         {/* Breadcrumb */}
-        <p className="sm-para mb-8">
+        <p
+          className="sm-para mb-8"
+          data-aos="fade-up"
+          data-aos-duration="800"
+          data-aos-delay="100"
+        >
           <Link href="/">Home</Link> /{" "}
           <span className="text-accent">{breadcrumb}</span>
         </p>
 
-        <div className="grid md:grid-cols-2 gap-14 items-center">
+        <div
+          className="grid md:grid-cols-2 gap-14 items-center"
+          data-aos="fade-up"
+          data-aos-duration="900"
+          data-aos-delay="200"
+        >
           {/* Left Image */}
-          <div className="relative w-full rounded-xl overflow-hidden">
+          <div
+            className="relative w-full rounded-xl overflow-hidden"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="300"
+          >
             <Image
               src={image}
               alt="section"
@@ -41,16 +56,39 @@ export default function About({
           </div>
 
           {/* Right Content */}
-          <div>
-            <h2 className="heading font-medium mb-4">{title}</h2>
+          <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+            <h2
+              className="heading font-medium mb-4"
+              data-aos="fade-up"
+              data-aos-duration="900"
+              data-aos-delay="500"
+            >
+              {title}
+            </h2>
 
-            <p className="text-black sm-para leading-relaxed mb-6">
+            <p
+              className="text-black sm-para leading-relaxed mb-6"
+              data-aos="fade-up"
+              data-aos-duration="900"
+              data-aos-delay="600"
+            >
               {description}
             </p>
 
-            <ul className="space-y-3">
+            <ul
+              className="space-y-3"
+              data-aos="fade-up"
+              data-aos-duration="900"
+              data-aos-delay="700"
+            >
               {bullets.map((item, index) => (
-                <li key={index} className="flex gap-3 items-start">
+                <li
+                  key={index}
+                  className="flex gap-3 items-start"
+                  data-aos="fade-up"
+                  data-aos-duration="850"
+                  data-aos-delay={800 + index * 120}
+                >
                   <svg
                     width="18"
                     height="18"

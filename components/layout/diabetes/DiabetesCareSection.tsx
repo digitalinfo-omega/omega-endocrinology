@@ -11,50 +11,107 @@ export default function DiabetesCareSection() {
       {/* Pediatric */}
       {/* Top Heading */}
       <div className="container">
-        <div className="text-center mb-20">
-          <h2 className="text-accent heading font-medium mb-2">
+        <div
+          className="text-center mb-20"
+          data-aos="fade-up"
+          data-aos-duration="900"
+          data-aos-delay="100"
+        >
+          <h2
+            className="text-accent heading font-medium mb-2"
+            data-aos="fade-up"
+            data-aos-duration="800"
+            data-aos-delay="150"
+          >
             Diabetes Care
           </h2>
-          <p className="sm-para max-w-xl mx-auto">
+          <p
+            className="sm-para max-w-xl mx-auto"
+            data-aos="fade-up"
+            data-aos-duration="800"
+            data-aos-delay="250"
+          >
             Managing diabetes is about more than blood sugar. It's about your
             overall hormonal balance.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-16 items-center md:mb-10 mb-5">
-          <div>
-            <h3 className="text-accent para font-bold mb-3">
+        <div
+          className="grid md:grid-cols-2 gap-16 items-center md:mb-10 mb-5"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="300"
+        >
+          <div data-aos="fade-up" data-aos-duration="900" data-aos-delay="400">
+            <h3
+              className="text-accent para font-bold mb-3"
+              data-aos="fade-up"
+              data-aos-duration="800"
+              data-aos-delay="450"
+            >
               Pediatric Diabetes Care
             </h3>
 
-            <p className="sm-para mb-4">
+            <p
+              className="sm-para mb-4"
+              data-aos="fade-up"
+              data-aos-duration="800"
+              data-aos-delay="500"
+            >
               When diabetes enters a child's world, everything changes – but it
               doesn't have to limit their dreams. Our pediatric specialists
               understand that managing diabetes in children isn't just about
               numbers on a glucose meter.
             </p>
 
-            <p className="sm-para font-medium mb-2">
+            <p
+              className="sm-para font-medium mb-2"
+              data-aos="fade-up"
+              data-aos-duration="800"
+              data-aos-delay="550"
+            >
               What Makes Kids Different:
             </p>
 
-            <ul className="list-disc ml-5 sm-para space-y-1 mb-4">
+            <ul
+              className="list-disc ml-5 sm-para space-y-1 mb-4"
+              data-aos="fade-up"
+              data-aos-duration="850"
+              data-aos-delay="600"
+            >
               <li>Growing bodies need flexible insulin adjustments</li>
               <li>School activities require special planning</li>
               <li>Emotional support helps build confidence</li>
               <li>Family education ensures home success</li>
             </ul>
 
-            <p className="sm-para font-medium mb-2">Our Promise:</p>
+            <p
+              className="sm-para font-medium mb-2"
+              data-aos="fade-up"
+              data-aos-duration="800"
+              data-aos-delay="650"
+            >
+              Our Promise:
+            </p>
 
-            <p className="sm-para">
+            <p
+              className="sm-para"
+              data-aos="fade-up"
+              data-aos-duration="800"
+              data-aos-delay="700"
+            >
               We make diabetes management feel less like a burden and more like
               a skill your child can master. From playground to classroom, we're
               there every step of the way.
             </p>
           </div>
 
-          <div className="flex justify-center">
+          <div
+            className="flex justify-center"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="450"
+          >
             <Image
               src="/images/diabetes/pediatric.webp"
               alt="Pediatric"
@@ -65,7 +122,13 @@ export default function DiabetesCareSection() {
           </div>
         </div>
       </div>
-      <div className="md:mb-10 mb-5">
+
+      <div
+        className="md:mb-10 mb-5"
+        data-aos="fade-up"
+        data-aos-duration="800"
+        data-aos-delay="800"
+      >
         <div className="flex justify-start">
           <div className="w-[45%] flex items-center">
             <div className="flex-1 h-0.5 bg-accent" />
@@ -76,8 +139,18 @@ export default function DiabetesCareSection() {
 
       <div className="container">
         {/* Adult */}
-        <div className="grid md:grid-cols-2 gap-16 items-center md:mb-10 mb-5">
-          <div className="flex justify-center">
+        <div
+          className="grid md:grid-cols-2 gap-16 items-center md:mb-10 mb-5"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="900"
+        >
+          <div
+            className="flex justify-center"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="950"
+          >
             <Image
               src="/images/diabetes/adult.webp"
               alt="Adult"
@@ -87,29 +160,63 @@ export default function DiabetesCareSection() {
             />
           </div>
 
-          <div>
-            <h3 className="text-accent font-bold para mb-3">
+          <div data-aos="fade-up" data-aos-duration="900" data-aos-delay="1000">
+            <h3
+              className="text-accent font-bold para mb-3"
+              data-aos="fade-up"
+              data-aos-duration="800"
+              data-aos-delay="1050"
+            >
               Adult Diabetes Management
             </h3>
 
-            <p className="sm-para mb-4">
+            <p
+              className="sm-para mb-4"
+              data-aos="fade-up"
+              data-aos-duration="800"
+              data-aos-delay="1100"
+            >
               Juggling meetings, family dinners, and gym sessions while managing
               diabetes? We get it. Adult life doesn't pause for blood sugar
               checks, so your diabetes care shouldn't either.
             </p>
 
-            <p className="sm-para font-medium mb-2">Your Busy Life Covered:</p>
+            <p
+              className="sm-para font-medium mb-2"
+              data-aos="fade-up"
+              data-aos-duration="800"
+              data-aos-delay="1150"
+            >
+              Your Busy Life Covered:
+            </p>
 
-            <ul className="list-disc ml-5 sm-para space-y-1 mb-4">
+            <ul
+              className="list-disc ml-5 sm-para space-y-1 mb-4"
+              data-aos="fade-up"
+              data-aos-duration="850"
+              data-aos-delay="1200"
+            >
               <li>Flexible appointment scheduling around work</li>
               <li>Travel-friendly management strategies</li>
               <li>Stress-impact education and coping tools</li>
               <li>Technology integration for seamless monitoring</li>
             </ul>
 
-            <p className="sm-para font-medium mb-2">Why it matters:</p>
+            <p
+              className="sm-para font-medium mb-2"
+              data-aos="fade-up"
+              data-aos-duration="800"
+              data-aos-delay="1250"
+            >
+              Why it matters:
+            </p>
 
-            <p className="sm-para">
+            <p
+              className="sm-para"
+              data-aos="fade-up"
+              data-aos-duration="800"
+              data-aos-delay="1300"
+            >
               You have goals beyond diabetes – a promotion, vacation plans, or
               simply feeling your best. We help you achieve them all while
               keeping your health on track.
@@ -117,7 +224,13 @@ export default function DiabetesCareSection() {
           </div>
         </div>
       </div>
-      <div className="md:mb-10 mb-5">
+
+      <div
+        className="md:mb-10 mb-5"
+        data-aos="fade-up"
+        data-aos-duration="800"
+        data-aos-delay="1400"
+      >
         <div className="flex justify-end">
           <div className="w-[45%] flex items-center">
             <div className="w-3 h-3 rounded-full bg-accent -ml-1" />
@@ -128,37 +241,81 @@ export default function DiabetesCareSection() {
 
       <div className="container">
         {/* Senior */}
-        <div className="grid md:grid-cols-2 gap-16 items-center">
-          <div>
-            <h3 className="text-accent font-bold mb-3">Senior Diabetes Care</h3>
+        <div
+          className="grid md:grid-cols-2 gap-16 items-center"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="1500"
+        >
+          <div data-aos="fade-up" data-aos-duration="900" data-aos-delay="1600">
+            <h3
+              className="text-accent font-bold mb-3"
+              data-aos="fade-up"
+              data-aos-duration="800"
+              data-aos-delay="1650"
+            >
+              Senior Diabetes Care
+            </h3>
 
-            <p className="sm-para mb-4">
+            <p
+              className="sm-para mb-4"
+              data-aos="fade-up"
+              data-aos-duration="800"
+              data-aos-delay="1700"
+            >
               Wellness After years of life experience, you deserve diabetes care
               that respects your preferences while keeping you healthy and
               independent.
             </p>
 
-            <p className="sm-para font-medium mb-2">
+            <p
+              className="sm-para font-medium mb-2"
+              data-aos="fade-up"
+              data-aos-duration="800"
+              data-aos-delay="1750"
+            >
               Personalized For Your Needs:
             </p>
 
-            <ul className="list-disc ml-5 sm-para space-y-1 mb-4">
+            <ul
+              className="list-disc ml-5 sm-para space-y-1 mb-4"
+              data-aos="fade-up"
+              data-aos-duration="850"
+              data-aos-delay="1800"
+            >
               <li>Simplified medication routines</li>
               <li>Large-print educational materials</li>
               <li>Coordination with other doctors</li>
               <li>Fall prevention and safety focus</li>
             </ul>
 
-            <p className="sm-para font-medium mb-2">Our Commitment:</p>
+            <p
+              className="sm-para font-medium mb-2"
+              data-aos="fade-up"
+              data-aos-duration="800"
+              data-aos-delay="1850"
+            >
+              Our Commitment:
+            </p>
 
-            <p className="sm-para">
+            <p
+              className="sm-para"
+              data-aos="fade-up"
+              data-aos-duration="800"
+              data-aos-delay="1900"
+            >
               Your golden years should be about enjoying grandchildren, hobbies,
               and hard-earned retirement, not worrying about complicated
               diabetes regimens. We keep it simple, safe, and effective.
             </p>
           </div>
 
-          <div className="flex justify-center">
+          <div
+            className="flex justify-center"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="1650"
+          >
             <Image
               src="/images/diabetes/senior.webp"
               alt="Senior"

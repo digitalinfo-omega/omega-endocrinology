@@ -5,7 +5,7 @@ import type { FC } from "react";
 const HeroSection: FC = () => {
   return (
     <main
-      className="py-10 md:py-20"
+      className="py-10 md:py-12"
       style={{
         background:
           "linear-gradient(101.5deg, rgba(254, 194, 194, 0.12) 4.41%, rgba(252, 222, 158, 0.12) 111.54%)",
@@ -16,7 +16,11 @@ const HeroSection: FC = () => {
           {/* Left Column - Text Content */}
           <div className="flex flex-col items-start space-y-8 lg:space-y-10">
             {/* Top badge */}
-            <div className="relative inline-flex items-center gap-2.5 rounded-full border border-secondary p-2 text-[16px] font-medium shadow-sm backdrop-blur-sm bg-white">
+            <div
+              data-aos="fade-up"
+              data-aos-duration="800"
+              className="relative inline-flex items-center gap-2.5 rounded-full border border-secondary p-2 text-[16px] font-medium shadow-sm backdrop-blur-sm bg-white"
+            >
               <div className="absolute right-0 -top-4.5">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -67,27 +71,42 @@ const HeroSection: FC = () => {
             </div>
 
             {/* Main heading */}
-            <h1 className="font-bold leading-tight tracking-tight text-gray-900 text-[24px] md:text-[32px]">
+            <h1
+              data-aos="fade-up"
+              data-aos-delay="100"
+              data-aos-duration="900"
+              className="font-bold leading-tight tracking-tight text-gray-900 text-[24px] md:text-[32px]"
+            >
               Stay Ahead of <span className="text-accent">Hormonal Health</span>
             </h1>
 
             {/* Description */}
-            <p className="max-w-xl text-xl text-black">
+            <p
+              data-aos="fade-up"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+              className="max-w-xl text-xl text-black"
+            >
               At Omega Hospital, our endocrinology experts specialize in early
               detection, prevention, and advanced treatment of hormonal
               disorders, helping you lead a healthier, worry-free life.
             </p>
 
             {/* Buttons */}
-            <div className="flex md:justify-start justify-center flex-wrap gap-4 pt-4">
+            <div
+              data-aos="fade-up"
+              data-aos-delay="300"
+              data-aos-duration="1100"
+              className="flex md:justify-start justify-center flex-wrap gap-4 pt-4"
+            >
               <Link
                 href=""
                 className="
-      inline-flex items-center justify-center
-      min-h-14
-      rounded-[10px] bg-secondary px-20 md:px-8 text-[16px] font-semibold leading-none
-      text-white shadow-lg transition-all hover:scale-105
-    "
+                  inline-flex items-center justify-center
+                  min-h-14
+                  rounded-[10px] bg-secondary px-20 md:px-8 text-[16px] font-semibold leading-none
+                  text-white shadow-lg transition-all hover:scale-105
+                "
               >
                 Get In Touch
               </Link>
@@ -95,13 +114,13 @@ const HeroSection: FC = () => {
               <Link
                 href=""
                 className="
-      relative overflow-hidden group
-      inline-flex items-center justify-center gap-2
-      min-h-14
-      rounded-[10px]
-      border-2 border-accent px-8 text-[16px] font-semibold leading-none
-      text-accent
-    "
+                  relative overflow-hidden group
+                  inline-flex items-center justify-center gap-2
+                  min-h-14
+                  rounded-[10px]
+                  border-2 border-accent px-8 text-[16px] font-semibold leading-none
+                  text-accent
+                "
               >
                 {/* Hover blocks */}
                 <span className="absolute inset-0 z-0 flex">
@@ -132,7 +151,13 @@ const HeroSection: FC = () => {
             </div>
           </div>
 
-          <div className="relative w-full md:h-130.25 h-86.5">
+          {/* Right Column - Image */}
+          <div
+            className="relative w-full md:h-130.25 h-86.5"
+            data-aos="fade-up"
+            data-aos-duration="1200"
+            data-aos-delay="400"
+          >
             {/* You can later replace this with your actual image path */}
             <Image
               src="/images/digestive.webp"

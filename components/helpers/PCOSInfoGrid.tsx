@@ -23,7 +23,12 @@ const PCOSInfoGrid: FC<PCOSInfoGridProps> = ({
     <section className="md:py-20 py-10 bg-white">
       <div className="container">
         {/* Heading */}
-        <div className="text-center mb-14">
+        <div
+          className="text-center mb-14"
+          data-aos="fade-up"
+          data-aos-duration="900"
+          data-aos-delay="100"
+        >
           <h2 className="text-[20px] md:text-[22px] font-medium mb-3">
             {heading}
           </h2>
@@ -34,11 +39,19 @@ const PCOSInfoGrid: FC<PCOSInfoGridProps> = ({
         </div>
 
         {/* Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="200"
+        >
           {cards.map((card, idx) => (
             <div
               key={idx}
               className="bg-[#EDF7F7] rounded-2xl px-8 py-10 text-center flex flex-col items-center"
+              data-aos="fade-up"
+              data-aos-duration="900"
+              data-aos-delay={300 + idx * 150}
             >
               {/* Icon wrapper */}
               <div className="mb-6 flex p-2 items-center justify-center w-11 h-11 rounded-xl bg-[#e5f3f4]">
