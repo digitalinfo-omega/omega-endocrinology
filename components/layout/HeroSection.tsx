@@ -19,7 +19,7 @@ const HeroSection: FC = () => {
             <div
               data-aos="fade-up"
               data-aos-duration="800"
-              className="relative inline-flex items-center gap-2.5 rounded-full border border-secondary p-2 text-[16px] font-medium shadow-sm backdrop-blur-sm bg-white"
+              className="relative inline-flex items-center gap-2.5 rounded-full border border-secondary p-2 md:text-[16px] text-[15px] font-medium shadow-sm backdrop-blur-sm bg-white"
             >
               <div className="absolute right-0 -top-4.5">
                 <svg
@@ -75,7 +75,7 @@ const HeroSection: FC = () => {
               data-aos="fade-up"
               data-aos-delay="100"
               data-aos-duration="900"
-              className="font-bold leading-tight tracking-tight text-gray-900 text-[24px] md:text-[32px]"
+              className="font-bold md:text-start text-center leading-tight tracking-tight text-gray-900 text-[24px] md:text-[32px]"
             >
               Stay Ahead of <span className="text-accent">Hormonal Health</span>
             </h1>
@@ -85,7 +85,7 @@ const HeroSection: FC = () => {
               data-aos="fade-up"
               data-aos-delay="200"
               data-aos-duration="1000"
-              className="max-w-xl text-xl text-black"
+              className="max-w-xl text-xl text-black md:text-start text-center"
             >
               At Omega Hospital, our endocrinology experts specialize in early
               detection, prevention, and advanced treatment of hormonal
@@ -102,7 +102,7 @@ const HeroSection: FC = () => {
               {/* Get In Touch — smaller */}
               <Link
                 href=""
-                className="shrink-0 inline-flex items-center justify-center min-h-14 rounded-[10px] bg-secondary px-6 md:px-8 text-[16px] font-semibold leading-none text-white transition-transform hover:scale-105"
+                className="shrink-0 inline-flex items-center justify-center md:min-h-14 min-h-11 rounded-[10px] bg-secondary px-2 md:px-8 text-[16px] font-semibold leading-none text-white transition-transform hover:scale-105"
               >
                 Get In Touch
               </Link>
@@ -110,7 +110,7 @@ const HeroSection: FC = () => {
               {/* Explore Our Services — wider */}
               <Link
                 href="#services"
-                className="grow md:flex-none relative overflow-hidden group inline-flex items-center justify-center gap-2 min-h-14 rounded-[10px] border-2 border-accent px-6 md:px-8 text-[16px] font-semibold leading-none text-accentS"
+                className="grow md:flex-none relative overflow-hidden group inline-flex items-center justify-center md:min-h-14 min-h-11 rounded-[10px] border-2 border-accent px-2 md:px-8 md:text-[16px] text-[15px] font-semibold leading-none text-accent"
               >
                 {/* Hover blocks */}
                 <span className="absolute inset-0 z-0 flex">
