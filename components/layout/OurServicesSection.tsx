@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const OurServicesSection: FC<OurServicesSectionProps> = ({ services }) => {
   return (
-    <section className="py-10 md:py-20 bg-[#F9FAFF]">
+    <section id="services" className="py-10 md:py-20 bg-[#F9FAFF]">
       <div className="container">
         {/* Header */}
         <div className="text-center mb-14 md:mb-16 lg:mb-20">

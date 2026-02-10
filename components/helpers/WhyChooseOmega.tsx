@@ -44,38 +44,14 @@ export default function WhyChooseOmega({ heading, cards }: Props) {
               data-aos-delay={300 + i * 150} // staggered appearance for each card
             >
               <div>
-                <h4
-                  className="sm-para font-medium mb-12"
-                  data-aos="fade-up"
-                  data-aos-duration="800"
-                  data-aos-delay={400 + i * 150}
-                >
-                  {card.title}
-                </h4>
+                <h4 className="sm-para font-medium mb-12">{card.title}</h4>
 
-                <p
-                  className="para my-5 leading-relaxed"
-                  data-aos="fade-up"
-                  data-aos-duration="800"
-                  data-aos-delay={500 + i * 150}
-                >
-                  {card.description}
-                </p>
+                <p className="para my-5 leading-relaxed">{card.description}</p>
               </div>
 
-              <div
-                className="w-full h-px bg-white/50 my-14"
-                data-aos="fade-up"
-                data-aos-duration="800"
-                data-aos-delay={600 + i * 150}
-              />
+              <div className="w-full h-px bg-white/50 my-14" />
 
-              <div
-                className="mt-6"
-                data-aos="fade-up"
-                data-aos-duration="800"
-                data-aos-delay={650 + i * 150}
-              >
+              <div className="mt-6">
                 <p className="text-[14px] opacity-90">{card.footer}</p>
               </div>
             </div>

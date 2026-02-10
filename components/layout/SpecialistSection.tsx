@@ -41,7 +41,7 @@ const SpecialistSection = () => {
             </div>
 
             <h3
-              className="relative z-10 text-secondary heading font-bold mb-2"
+              className="md:block hidden relative z-10 text-secondary heading font-bold mb-2"
               data-aos="fade-up"
               data-aos-duration="900"
               data-aos-delay="400"
@@ -50,7 +50,7 @@ const SpecialistSection = () => {
             </h3>
 
             <p
-              className="relative z-10 para text-black"
+              className="md:block hidden relative z-10 para text-black"
               data-aos="fade-up"
               data-aos-duration="900"
               data-aos-delay="450"

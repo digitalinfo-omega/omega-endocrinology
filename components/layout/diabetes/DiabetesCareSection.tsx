@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function DiabetesCareSection() {
   return (
     <section
-      className="w-full py-10 md:py-20"
+      className="w-full py-10 md:py-20 overflow-hidden"
       style={{ background: "#48ACBB0D" }}
     >
       {/* Pediatric */}
@@ -125,7 +125,7 @@ export default function DiabetesCareSection() {
 
       <div
         className="md:mb-10 mb-5"
-        data-aos="fade-up"
+        data-aos="fade-right"
         data-aos-duration="800"
         data-aos-delay="800"
       >
@@ -227,7 +227,7 @@ export default function DiabetesCareSection() {
 
       <div
         className="md:mb-10 mb-5"
-        data-aos="fade-up"
+        data-aos="fade-left"
         data-aos-duration="800"
         data-aos-delay="1400"
       >

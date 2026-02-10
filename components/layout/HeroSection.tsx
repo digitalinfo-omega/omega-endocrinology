@@ -97,28 +97,28 @@ const HeroSection: FC = () => {
               data-aos="fade-up"
               data-aos-delay="300"
               data-aos-duration="1100"
-              className="flex md:justify-start justify-center flex-wrap gap-4 pt-4"
+              className="flex justify-start gap-4 pt-4"
             >
               <Link
                 href=""
                 className="
                   inline-flex items-center justify-center
                   min-h-14
-                  rounded-[10px] bg-secondary px-20 md:px-8 text-[16px] font-semibold leading-none
-                  text-white shadow-lg transition-all hover:scale-105
+                  rounded-[10px] bg-secondary px-6 md:text-[16px] text-[13px] font-semibold leading-none
+                  text-white transition-all hover:scale-105
                 "
               >
                 Get In Touch
               </Link>
 
               <Link
-                href=""
+                href="#services"
                 className="
                   relative overflow-hidden group
                   inline-flex items-center justify-center gap-2
                   min-h-14
                   rounded-[10px]
-                  border-2 border-accent px-8 text-[16px] font-semibold leading-none
+                  border-2 border-accent px-5 md:text-[16px] text-[13px] font-semibold leading-none
                   text-accent
                 "
               >
