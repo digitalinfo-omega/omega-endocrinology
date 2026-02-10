@@ -97,30 +97,20 @@ const HeroSection: FC = () => {
               data-aos="fade-up"
               data-aos-delay="300"
               data-aos-duration="1100"
-              className="flex justify-start gap-4 pt-4"
+              className="flex w-full gap-3 pt-4 justify-center md:justify-start flex-nowrap"
             >
+              {/* Get In Touch — smaller */}
               <Link
                 href=""
-                className="
-                  inline-flex items-center justify-center
-                  min-h-14
-                  rounded-[10px] bg-secondary px-6 md:text-[16px] text-[13px] font-semibold leading-none
-                  text-white transition-all hover:scale-105
-                "
+                className="shrink-0 inline-flex items-center justify-center min-h-14 rounded-[10px] bg-secondary px-6 md:px-8 text-[16px] font-semibold leading-none text-white transition-transform hover:scale-105"
               >
                 Get In Touch
               </Link>
 
+              {/* Explore Our Services — wider */}
               <Link
                 href="#services"
-                className="
-                  relative overflow-hidden group
-                  inline-flex items-center justify-center gap-2
-                  min-h-14
-                  rounded-[10px]
-                  border-2 border-accent px-5 md:text-[16px] text-[13px] font-semibold leading-none
-                  text-accent
-                "
+                className="grow md:flex-none relative overflow-hidden group inline-flex items-center justify-center gap-2 min-h-14 rounded-[10px] border-2 border-accent px-6 md:px-8 text-[16px] font-semibold leading-none text-accentS"
               >
                 {/* Hover blocks */}
                 <span className="absolute inset-0 z-0 flex">
@@ -136,8 +126,8 @@ const HeroSection: FC = () => {
                   <span className="transition-transform duration-300 group-hover:translate-x-1">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      width="30"
-                      height="24"
+                      width="26"
+                      height="20"
                       viewBox="0 0 30 24"
                       fill="none"
                       className="stroke-current"
