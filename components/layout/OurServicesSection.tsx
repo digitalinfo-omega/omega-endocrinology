@@ -41,17 +41,17 @@ const OurServicesSection: FC<OurServicesSectionProps> = ({ services }) => {
               data-aos-anchor-placement="top-bottom"
             >
               {/* Icon placeholder */}
-              <div className="mb-2 w-12 h-12 flex items-center justify-center text-accent">
+              <div className="mb-2 w-12 h-12 mx-auto md:mx-0 flex items-center justify-center text-accent">
                 <div className="w-10 h-10 flex items-center justify-center text-accent text-xl font-bold">
                   {service.icon}
                 </div>
               </div>
 
-              <h3 className="text-[18px] font-semibold text-black mb-3">
+              <h3 className="text-[18px] font-semibold text-black mb-3 md:text-start text-center">
                 {service.title}
               </h3>
 
-              <p className="text-[16px] text-gray-600 dark:text-gray-400 leading-relaxed mb-6 grow">
+              <p className="text-[16px] text-gray-600 dark:text-gray-400 leading-relaxed mb-6 grow md:text-start text-center">
                 {service.description}
               </p>
 
@@ -61,7 +61,7 @@ const OurServicesSection: FC<OurServicesSectionProps> = ({ services }) => {
                   border border-accent p-2 gap-2
                   text-accent hover:text-white
                   font-medium text-sm md:text-base
-                  transition-colors w-full"
+                  transition-colors md:w-full w-[60%] mx-auto md:mx-0"
               >
                 <span className="relative z-10">Explore more</span>
 

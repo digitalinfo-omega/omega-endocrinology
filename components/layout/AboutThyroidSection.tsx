@@ -17,9 +17,8 @@ const AboutSection: FC<AboutSectionProps> = ({
     <section className="py-10 md:py-20 bg-white dark:bg-gray-950">
       <div className="container">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 xl:gap-16 items-center">
-          {/* Left - Image */}
           <div
-            className="relative w-full"
+            className="relative w-full order-2 lg:order-1"
             data-aos="fade-up"
             data-aos-duration="1000"
             data-aos-delay="100"
@@ -31,13 +30,7 @@ const AboutSection: FC<AboutSectionProps> = ({
             />
           </div>
 
-          {/* Right - Content */}
-          <div
-            className="space-y-8 md:space-y-10"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-delay="200"
-          >
+          <div className="lg:space-y-8 md:space-y-10 space-y-8 text-center lg:text-left order-1 lg:order-2">
             <div className="space-y-5 md:space-y-6">
               <span
                 className="inline-block text-accent uppercase tracking-wider font-medium md:text-[24px] text-[18px]"
@@ -49,7 +42,7 @@ const AboutSection: FC<AboutSectionProps> = ({
               </span>
 
               <h2
-                className="md:text-[40px] text-[28px] font-bold leading-tight text-black dark:text-white"
+                className="para font-bold leading-tight text-black dark:text-white"
                 data-aos="fade-up"
                 data-aos-duration="900"
                 data-aos-delay="400"
@@ -58,7 +51,7 @@ const AboutSection: FC<AboutSectionProps> = ({
               </h2>
 
               <p
-                className="md:text-[18px] text-[16px] text-black dark:text-gray-300 leading-relaxed"
+                className="md:text-[18px] text-[16px] text-black dark:text-gray-300 leading-relaxed max-w-xl mx-auto lg:mx-0"
                 data-aos="fade-up"
                 data-aos-duration="900"
                 data-aos-delay="500"
@@ -67,7 +60,6 @@ const AboutSection: FC<AboutSectionProps> = ({
               </p>
             </div>
 
-            {/* Feature list */}
             <div
               className="space-y-4 md:space-y-5"
               data-aos="fade-up"

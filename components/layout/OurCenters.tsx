@@ -67,16 +67,20 @@ const OurCenters = () => {
             </div>
           </div>
 
-          <div className="lg:basis-[70%] basis-full w-full flex flex-col justify-between md:h-90 h-full">
-            <h3 className="text-secondary heading font-medium">
+          <div className="lg:basis-[70%] basis-full w-full flex flex-col justify-between md:h-90 h-full md:gap-0 gap-5">
+            <h3 className="text-secondary heading font-medium md:text-start text-center">
               {active.heading}
             </h3>
 
             {active.subHeading && (
-              <p className="font-bold text-[16px]">{active.subHeading}</p>
+              <p className="font-bold text-[16px] md:text-start text-center">
+                {active.subHeading}
+              </p>
             )}
 
-            <p className="text-[15px] leading-relaxed">{active.description}</p>
+            <p className="text-[15px] leading-relaxed md:text-start text-center">
+              {active.description}
+            </p>
 
             <div className="flex flex-col md:flex-row gap-4">
               <button className="flex items-center justify-center gap-2 bg-accent text-white text-[14px] px-6 py-3 rounded-lg whitespace-nowrap">

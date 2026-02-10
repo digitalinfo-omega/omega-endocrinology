@@ -33,7 +33,7 @@ export default function About({
         </p>
 
         <div
-          className="grid md:grid-cols-2 gap-14 items-center"
+          className="grid md:grid-cols-2 md:gap-14 gap-7 items-center"
           data-aos="fade-up"
           data-aos-duration="900"
           data-aos-delay="200"
@@ -58,7 +58,7 @@ export default function About({
           {/* Right Content */}
           <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
             <h2
-              className="heading font-medium mb-4"
+              className="heading font-medium mb-4 md:text-start text-center md:text-black text-accent"
               data-aos="fade-up"
               data-aos-duration="900"
               data-aos-delay="500"
@@ -67,7 +67,7 @@ export default function About({
             </h2>
 
             <p
-              className="text-black sm-para leading-relaxed mb-6"
+              className="text-black sm-para leading-relaxed mb-6 md:text-start text-center"
               data-aos="fade-up"
               data-aos-duration="900"
               data-aos-delay="600"

@@ -31,9 +31,11 @@ const InfoGridSection: FC<InfoGridSectionProps> = ({
         >
           {/* Left Content */}
           <div>
-            <h2 className="text-[16px] font-semibold mb-6">{heading}</h2>
+            <h2 className="text-[16px] font-semibold mb-6 md:text-start text-center">
+              {heading}
+            </h2>
 
-            <div className="space-y-4 text-gray-600 leading-relaxed text-[16px]">
+            <div className="space-y-4 text-gray-600 leading-relaxed text-[16px] md:text-start text-center">
               {paragraphs.map((text, i) => (
                 <p key={i}>{text}</p>
               ))}

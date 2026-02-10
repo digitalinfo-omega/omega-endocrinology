@@ -4,12 +4,12 @@ import { AnimatedCounter } from "../helpers/AnimatedCounter";
 
 export default function WhyChooseUsSection() {
   return (
-    <section className="w-full bg-white py-20 relative overflow-hidden">
+    <section className="w-full bg-white md:py-20 py-10 relative overflow-hidden">
       <div className="container">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 md:gap-16 gap-5 items-center">
           {/* LEFT IMAGE COLLAGE */}
           <div
-            className="w-full flex justify-center"
+            className="hidden w-full md:flex justify-center"
             data-aos="fade-up"
             data-aos-duration="1000"
             data-aos-delay="100"
@@ -27,12 +27,12 @@ export default function WhyChooseUsSection() {
 
           {/* RIGHT CONTENT */}
           <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-            <p className="text-accent font-semibold tracking-wide mb-3 heading">
+            <p className="text-accent font-semibold tracking-wide mb-3 heading md:text-start text-center">
               WHY CHOOSE US
             </p>
 
             <h2
-              className="para font-bold leading-tight mb-4"
+              className="para font-bold leading-tight mb-4 md:text-start text-center"
               data-aos="fade-up"
               data-aos-duration="900"
               data-aos-delay="300"
@@ -41,7 +41,7 @@ export default function WhyChooseUsSection() {
             </h2>
 
             <p
-              className="text-black/44 max-w-xl mb-10 text-[14px]"
+              className="text-black/44 max-w-xl mb-10 text-[14px] md:text-start text-center"
               data-aos="fade-up"
               data-aos-duration="900"
               data-aos-delay="400"
@@ -50,6 +50,23 @@ export default function WhyChooseUsSection() {
               and modern endocrine care that delivers measurable results for
               lasting wellness.
             </p>
+
+            <div
+              className="md:hidden w-full flex justify-center"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="100"
+            >
+              <div className="relative w-full h-105 rounded-[32px] overflow-hidden hover:scale-105 transition duration-200 z-30">
+                <Image
+                  src="/images/why-choose-us.webp"
+                  alt="Why choose us"
+                  fill
+                  priority
+                  className="object-cover"
+                />
+              </div>
+            </div>
 
             {/* STATS */}
             <div
@@ -65,7 +82,7 @@ export default function WhyChooseUsSection() {
 
             {/* FEATURES */}
             <div
-              className="flex flex-wrap gap-6 mb-10"
+              className="flex md:justify-start justify-center flex-wrap gap-6 mb-10"
               data-aos="fade-up"
               data-aos-duration="1000"
               data-aos-delay="600"
@@ -75,19 +92,21 @@ export default function WhyChooseUsSection() {
               <Feature text="Modern Treatment Protocols" />
             </div>
 
-            <button
-              className="text-[14px] bg-accent text-white px-8 py-3 rounded-md hover:opacity-90 transition"
-              data-aos="fade-up"
-              data-aos-duration="800"
-              data-aos-delay="700"
-            >
-              Book Appointment
-            </button>
+            <div className="flex w-full md:justify-start justify-center">
+              <button
+                className="text-center text-[14px] bg-accent text-white px-8 py-3 rounded-md hover:opacity-90 transition"
+                data-aos="fade-up"
+                data-aos-duration="800"
+                data-aos-delay="700"
+              >
+                Book Appointment
+              </button>
+            </div>
           </div>
         </div>
 
         <div
-          className="absolute md:bottom-18 bottom-10 md:left-[45%] left-3"
+          className="md:block hidden absolute md:bottom-18 bottom-10 md:left-[45%] left-3"
           data-aos="fade-up"
           data-aos-duration="1200"
           data-aos-delay="300"

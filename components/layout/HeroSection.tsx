@@ -14,7 +14,7 @@ const HeroSection: FC = () => {
       <div className="container">
         <div className="grid grid-cols-1 items-center gap-6 lg:grid-cols-2 lg:gap-12 xl:gap-18">
           {/* Left Column - Text Content */}
-          <div className="flex flex-col items-start space-y-8 lg:space-y-10">
+          <div className="flex flex-col md:items-start items-center space-y-8 lg:space-y-10">
             {/* Top badge */}
             <div
               data-aos="fade-up"

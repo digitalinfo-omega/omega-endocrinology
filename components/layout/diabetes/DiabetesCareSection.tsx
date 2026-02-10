@@ -12,7 +12,7 @@ export default function DiabetesCareSection() {
       {/* Top Heading */}
       <div className="container">
         <div
-          className="text-center mb-20"
+          className="text-center md:mb-20 mb-5"
           data-aos="fade-up"
           data-aos-duration="900"
           data-aos-delay="100"
@@ -37,14 +37,19 @@ export default function DiabetesCareSection() {
         </div>
 
         <div
-          className="grid md:grid-cols-2 gap-16 items-center md:mb-10 mb-5"
+          className="grid md:grid-cols-2 md:gap-16 gap-7 items-center md:mb-10 mb-5"
           data-aos="fade-up"
           data-aos-duration="1000"
           data-aos-delay="300"
         >
-          <div data-aos="fade-up" data-aos-duration="900" data-aos-delay="400">
+          <div
+            className="md:order-1 order-2"
+            data-aos="fade-up"
+            data-aos-duration="900"
+            data-aos-delay="400"
+          >
             <h3
-              className="text-accent para font-bold mb-3"
+              className="text-accent para font-bold mb-3 md:text-start text-center"
               data-aos="fade-up"
               data-aos-duration="800"
               data-aos-delay="450"
@@ -53,7 +58,7 @@ export default function DiabetesCareSection() {
             </h3>
 
             <p
-              className="sm-para mb-4"
+              className="sm-para mb-4 md:text-start text-center"
               data-aos="fade-up"
               data-aos-duration="800"
               data-aos-delay="500"
@@ -65,7 +70,7 @@ export default function DiabetesCareSection() {
             </p>
 
             <p
-              className="sm-para font-medium mb-2"
+              className="sm-para font-medium mb-2 md:text-start text-center text-accent"
               data-aos="fade-up"
               data-aos-duration="800"
               data-aos-delay="550"
@@ -86,7 +91,7 @@ export default function DiabetesCareSection() {
             </ul>
 
             <p
-              className="sm-para font-medium mb-2"
+              className="sm-para font-medium mb-2 text-accent"
               data-aos="fade-up"
               data-aos-duration="800"
               data-aos-delay="650"
@@ -107,7 +112,7 @@ export default function DiabetesCareSection() {
           </div>
 
           <div
-            className="flex justify-center"
+            className="flex justify-center md:order-2 order-1"
             data-aos="fade-up"
             data-aos-duration="1000"
             data-aos-delay="450"
@@ -124,7 +129,7 @@ export default function DiabetesCareSection() {
       </div>
 
       <div
-        className="md:mb-10 mb-5"
+        className="md:mb-10 mb-5 md:block hidden"
         data-aos="fade-right"
         data-aos-duration="800"
         data-aos-delay="800"
@@ -140,7 +145,7 @@ export default function DiabetesCareSection() {
       <div className="container">
         {/* Adult */}
         <div
-          className="grid md:grid-cols-2 gap-16 items-center md:mb-10 mb-5"
+          className="grid md:grid-cols-2 md:gap-16 gap-7 items-center md:mb-10 mb-5"
           data-aos="fade-up"
           data-aos-duration="1000"
           data-aos-delay="900"
@@ -162,7 +167,7 @@ export default function DiabetesCareSection() {
 
           <div data-aos="fade-up" data-aos-duration="900" data-aos-delay="1000">
             <h3
-              className="text-accent font-bold para mb-3"
+              className="text-accent font-bold para mb-3 md:text-start text-center"
               data-aos="fade-up"
               data-aos-duration="800"
               data-aos-delay="1050"
@@ -171,7 +176,7 @@ export default function DiabetesCareSection() {
             </h3>
 
             <p
-              className="sm-para mb-4"
+              className="sm-para mb-4 md:text-start text-center"
               data-aos="fade-up"
               data-aos-duration="800"
               data-aos-delay="1100"
@@ -226,7 +231,7 @@ export default function DiabetesCareSection() {
       </div>
 
       <div
-        className="md:mb-10 mb-5"
+        className="md:mb-10 mb-5 md:block hidden"
         data-aos="fade-left"
         data-aos-duration="800"
         data-aos-delay="1400"
@@ -242,14 +247,19 @@ export default function DiabetesCareSection() {
       <div className="container">
         {/* Senior */}
         <div
-          className="grid md:grid-cols-2 gap-16 items-center"
+          className="grid md:grid-cols-2 md:gap-16 gap-7 items-center"
           data-aos="fade-up"
           data-aos-duration="1000"
           data-aos-delay="1500"
         >
-          <div data-aos="fade-up" data-aos-duration="900" data-aos-delay="1600">
+          <div
+            className="md:order-1 order-2"
+            data-aos="fade-up"
+            data-aos-duration="900"
+            data-aos-delay="1600"
+          >
             <h3
-              className="text-accent font-bold mb-3"
+              className="text-accent font-bold mb-3 md:text-start text-center"
               data-aos="fade-up"
               data-aos-duration="800"
               data-aos-delay="1650"
@@ -258,7 +268,7 @@ export default function DiabetesCareSection() {
             </h3>
 
             <p
-              className="sm-para mb-4"
+              className="sm-para mb-4 md:text-start text-center"
               data-aos="fade-up"
               data-aos-duration="800"
               data-aos-delay="1700"
@@ -311,7 +321,7 @@ export default function DiabetesCareSection() {
           </div>
 
           <div
-            className="flex justify-center"
+            className="flex justify-center md:order-2 order-1"
             data-aos="fade-up"
             data-aos-duration="1000"
             data-aos-delay="1650"

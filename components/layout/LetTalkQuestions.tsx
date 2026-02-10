@@ -10,7 +10,7 @@ const LetTalkQuestions = ({ title, items }: LetTalkQuestionsProps) => {
       <div className="container">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           <div>
-            <div className="flex items-center gap-2 mb-4">
+            <div className="flex items-center gap-2 mb-4 md:justify-start justify-center">
               <div className="text-secondary">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -39,7 +39,9 @@ const LetTalkQuestions = ({ title, items }: LetTalkQuestionsProps) => {
               <span className="text-accent para font-bold">Ask Question</span>
             </div>
 
-            <h2 className="heading font-bold mb-6">{title}</h2>
+            <h2 className="heading font-bold mb-6 md:text-start text-center">
+              {title}
+            </h2>
 
             <CustomAccordion items={items} />
           </div>

@@ -62,7 +62,7 @@ const SpecialistSection = () => {
 
           <div data-aos="fade-up" data-aos-duration="1100" data-aos-delay="400">
             <h3
-              className="text-secondary heading font-bold mb-3"
+              className="text-secondary heading font-bold mb-3 md:text-start text-center"
               data-aos="fade-up"
               data-aos-duration="900"
               data-aos-delay="500"
@@ -71,7 +71,7 @@ const SpecialistSection = () => {
             </h3>
 
             <p
-              className="text-[16px] text-black mb-2"
+              className="text-[16px] text-black mb-2 md:text-start text-center"
               data-aos="fade-up"
               data-aos-duration="900"
               data-aos-delay="550"
@@ -81,7 +81,7 @@ const SpecialistSection = () => {
             </p>
 
             <p
-              className="para text-accent mb-6"
+              className="para text-accent mb-6 md:text-start text-center"
               data-aos="fade-up"
               data-aos-duration="900"
               data-aos-delay="600"
@@ -90,7 +90,7 @@ const SpecialistSection = () => {
             </p>
 
             <p
-              className="text-[14px] text-black leading-relaxed mb-8"
+              className="text-[14px] text-black leading-relaxed mb-8 md:text-start text-center"
               data-aos="fade-up"
               data-aos-duration="950"
               data-aos-delay="650"

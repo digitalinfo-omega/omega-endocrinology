@@ -1,6 +1,7 @@
 "use client";
 
-import type { FC, ReactNode } from "react";
+import { useEffect, useState, type FC, type ReactNode } from "react";
+import { useMediaQuery } from "react-responsive";
 
 interface InfoRow {
   title: string;
@@ -28,10 +29,25 @@ const HorizontalInfoSection: FC<HorizontalInfoSectionProps> = ({
   iconBg = "#e4f6f9",
   accentColor = "#0ea5b7",
 }) => {
+  const isMobile = useMediaQuery({ maxWidth: 767 });
+
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
+  const getAosAnimation = (index: number) => {
+    if (!isMounted) {
+      return index % 2 === 0 ? "fade-left" : "fade-right";
+    }
+    return isMobile ? "fade-up" : index % 2 === 0 ? "fade-left" : "fade-right";
+  };
+
   return (
-    <section style={{ background: sectionBg }} className="py-20">
+    <section style={{ background: sectionBg }} className="md:py-20 py-10">
       <div className="max-w-7xl mx-auto px-4">
-        {/* Heading */}
+        {/* Heading – unchanged, always fade-up */}
         <div
           className="text-center max-w-3xl mx-auto mb-12"
           data-aos="fade-up"
@@ -59,22 +75,20 @@ const HorizontalInfoSection: FC<HorizontalInfoSectionProps> = ({
           </div>
         </div>
 
-        {/* Rows */}
         <div className="space-y-5 overflow-hidden">
           {rows.map((row, i) => {
             const iconLeft = i % 2 !== 0;
-            const direction = i % 2 === 0 ? "fade-left" : "fade-right";
+            const animation = getAosAnimation(i);
 
             return (
               <div
                 key={i}
                 style={{ background: rowBg }}
                 className="rounded-xl px-6 py-6 flex flex-col md:flex-row items-center gap-6"
-                data-aos={direction}
+                data-aos={animation}
                 data-aos-duration="900"
                 data-aos-delay={400 + i * 180}
               >
-                {/* Icon (mobile top, desktop conditional) */}
                 {iconLeft && (
                   <div
                     style={{ background: iconBg, color: accentColor }}
@@ -84,7 +98,6 @@ const HorizontalInfoSection: FC<HorizontalInfoSectionProps> = ({
                   </div>
                 )}
 
-                {/* Text */}
                 <div className="flex-1 text-center md:text-left order-2">
                   <h3 className="font-semibold mb-2">{row.title}</h3>
                   <p className="text-sm text-gray-600 leading-relaxed">
@@ -92,7 +105,6 @@ const HorizontalInfoSection: FC<HorizontalInfoSectionProps> = ({
                   </p>
                 </div>
 
-                {/* Icon Right (desktop) */}
                 {!iconLeft && (
                   <div
                     style={{ background: iconBg, color: accentColor }}

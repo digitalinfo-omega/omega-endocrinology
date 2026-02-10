@@ -78,29 +78,16 @@ const ImpactGridSection: FC<ImpactGridSectionProps> = ({
               {/* Icon Slot */}
               <div
                 style={{ background: iconBg, color: accentColor }}
-                className="w-12 h-12 p-2 rounded-md flex items-center justify-center mb-4"
-                data-aos="fade-up"
-                data-aos-duration="800"
-                data-aos-delay={450 + i * 150}
+                className="w-12 h-12 p-2 rounded-md flex items-center justify-center mb-4 mx-auto md:mx-0"
               >
                 {card.icon}
               </div>
 
-              <h3
-                className="font-semibold mb-2"
-                data-aos="fade-up"
-                data-aos-duration="800"
-                data-aos-delay={500 + i * 150}
-              >
+              <h3 className="font-semibold mb-2 md:text-start text-center">
                 {card.title}
               </h3>
 
-              <p
-                className="text-sm text-black leading-relaxed"
-                data-aos="fade-up"
-                data-aos-duration="800"
-                data-aos-delay={550 + i * 150}
-              >
+              <p className="text-sm text-black leading-relaxed md:text-start text-center">
                 {card.description}
               </p>
             </div>
