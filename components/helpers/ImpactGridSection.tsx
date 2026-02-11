@@ -78,7 +78,7 @@ const ImpactGridSection: FC<ImpactGridSectionProps> = ({
               {/* Icon Slot */}
               <div
                 style={{ background: iconBg, color: accentColor }}
-                className="w-12 h-12 p-2 rounded-md flex items-center justify-center mb-4 mx-auto md:mx-0"
+                className="md:w-12 md:h-12 w-15 h-13 p-2 rounded-md flex items-center justify-center mb-4 mx-auto md:mx-0"
               >
                 {card.icon}
               </div>

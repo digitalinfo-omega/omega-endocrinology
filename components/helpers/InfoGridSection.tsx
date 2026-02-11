@@ -51,7 +51,7 @@ const InfoGridSection: FC<InfoGridSectionProps> = ({
                 style={{ boxShadow: "0px 0px 1px 0px #48ACBB" }}
               >
                 {/* Icon Slot */}
-                <div className="w-10 h-10 mx-auto mb-4 flex items-center justify-center rounded-xl bg-[#48ACBB0D] p-2">
+                <div className="md:w-12 w-16 md:h-11 h-13 mx-auto mb-4 flex items-center justify-center rounded-xl bg-[#48ACBB0D] p-2">
                   <div className="w-full h-full flex items-center justify-center">
                     {card.icon}
                   </div>

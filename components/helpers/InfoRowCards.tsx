@@ -37,7 +37,7 @@ const InfoRowCards: FC<InfoRowCardsProps> = ({
               data-aos-duration="900"
               data-aos-delay={300 + i * 150}
             >
-              <div className="w-10 h-10 mb-4 mx-auto md:mx-0 flex justify-center items-center">
+              <div className="md:w-10 w-15 h-10 mb-4 mx-auto md:mx-0 flex justify-center items-center">
                 {card.icon}
               </div>
 

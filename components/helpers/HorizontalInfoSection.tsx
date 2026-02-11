@@ -92,7 +92,7 @@ const HorizontalInfoSection: FC<HorizontalInfoSectionProps> = ({
                 {iconLeft && (
                   <div
                     style={{ background: iconBg, color: accentColor }}
-                    className="w-12 h-12 rounded-md flex items-center justify-center shrink-0 p-3 md:order-1 order-1"
+                    className="md:w-13 md:h-13 w-16 h-13 rounded-md flex items-center justify-center shrink-0 p-3 md:order-1 order-1"
                   >
                     {row.icon}
                   </div>
@@ -108,7 +108,7 @@ const HorizontalInfoSection: FC<HorizontalInfoSectionProps> = ({
                 {!iconLeft && (
                   <div
                     style={{ background: iconBg, color: accentColor }}
-                    className="w-12 h-12 rounded-md flex items-center justify-center shrink-0 p-3 md:order-3 order-1"
+                    className="md:w-13 md:h-13 w-16 h-13 rounded-md flex items-center justify-center shrink-0 p-3 md:order-3 order-1"
                   >
                     {row.icon}
                   </div>
