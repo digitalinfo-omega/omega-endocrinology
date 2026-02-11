@@ -31,9 +31,9 @@ const AboutSection: FC<AboutSectionProps> = ({
           </div>
 
           <div className="lg:space-y-8 md:space-y-10 space-y-8 text-center lg:text-left order-1 lg:order-2">
-            <div className="space-y-5 md:space-y-6">
+            <div className="space-y-2 md:space-y-6">
               <span
-                className="inline-block text-accent uppercase tracking-wider font-medium md:text-[24px] text-[18px]"
+                className="inline-block text-accent uppercase tracking-wider font-medium heading"
                 data-aos="fade-up"
                 data-aos-duration="800"
                 data-aos-delay="300"

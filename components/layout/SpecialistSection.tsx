@@ -90,7 +90,7 @@ const SpecialistSection = () => {
             </p>
 
             <p
-              className="text-[14px] text-black leading-relaxed mb-8 md:text-start text-center"
+              className="para text-black leading-relaxed mb-8 md:text-start text-center"
               data-aos="fade-up"
               data-aos-duration="950"
               data-aos-delay="650"

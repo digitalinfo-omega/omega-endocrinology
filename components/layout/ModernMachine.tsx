@@ -233,14 +233,14 @@ const ModernMachine = () => {
 
                   <p
                     data-animate
-                    className="text-[13px] md:text-sm lg:text-base text-gray-700 mb-4 md:mb-5 lg:mb-6 font-semibold text-center lg:text-left max-w-xl lg:max-w-none"
+                    className="sm-para md:text-sm lg:text-base text-gray-700 mb-4 md:mb-5 lg:mb-6 font-semibold text-center lg:text-left max-w-xl lg:max-w-none"
                   >
                     {s.subtitle}
                   </p>
 
                   <ul
                     data-animate
-                    className="space-y-2 md:space-y-2.5 lg:space-y-3 text-gray-600 text-[12px] md:text-sm lg:text-base mb-6 w-full max-w-xl lg:max-w-none"
+                    className="space-y-2 md:space-y-2.5 lg:space-y-3 text-gray-600 text-[14px] md:text-sm lg:text-base mb-6 w-full max-w-xl lg:max-w-none"
                   >
                     {s.points.map((p: string, idx: number) => (
                       <li
@@ -305,7 +305,7 @@ const ModernMachine = () => {
           {/* Left Arrow */}
           <button
             onClick={() => setCurrent((p) => p - 1)}
-            className="flex w-10 h-10 rounded-full bg-[#2AA0AE] text-white z-20 items-center justify-center text-2xl hover:bg-[#238a96] transition-colors shrink-0"
+            className="flex w-10 h-10 rounded-full bg-[#2AA0AE] text-white z-20 items-center justify-center text-2xl hover:bg-[#238a96] transition-colors shrink-0 pb-1.5"
             aria-label="Previous slide"
           >
             ‹
@@ -314,7 +314,7 @@ const ModernMachine = () => {
           {/* Right Arrow */}
           <button
             onClick={() => setCurrent((p) => p + 1)}
-            className="flex w-10 h-10 rounded-full bg-[#2AA0AE] text-white z-20 items-center justify-center text-2xl hover:bg-[#238a96] transition-colors shrink-0"
+            className="flex w-10 h-10 rounded-full bg-[#2AA0AE] text-white z-20 items-center justify-center text-2xl hover:bg-[#238a96] transition-colors shrink-0 pb-1.5"
             aria-label="Next slide"
           >
             ›

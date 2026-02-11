@@ -2,44 +2,33 @@
 
 import { useEffect, useRef, useState } from "react";
 
-function parseNumber(value: string) {
-  const matches = value.match(/[\d.]+/g);
-
-  if (!matches || matches.length !== 1) {
-    return { number: null, suffix: "", raw: value };
-  }
-
-  const numeric = matches[0];
-  const suffix = value.replace(numeric, "");
-
-  return { number: parseFloat(numeric), suffix, raw: value };
-}
-
 type AnimatedCounterProps = {
   value: string;
-  duration?: number; // in ms
+  duration?: number;
+  locale?: string;
 };
 
 export function AnimatedCounter({
   value,
   duration = 1500,
+  locale = "en-IN",
 }: AnimatedCounterProps) {
-  const parsed = parseNumber(value);
-
-  // ✅ Non-numeric (like 24/7) → render directly
-  if (parsed.number === null) {
-    return <span>{parsed.raw}</span>;
-  }
-
-  const { number, suffix } = parsed;
-
-  const [displayValue, setDisplayValue] = useState(0);
   const ref = useRef<HTMLSpanElement | null>(null);
   const startedRef = useRef(false);
 
+  // Extract all numeric segments
+  const numberMatches = value.match(/[\d.]+/g);
+
+  const [displayNumbers, setDisplayNumbers] = useState<number[]>(
+    numberMatches ? numberMatches.map(() => 0) : [],
+  );
+
   useEffect(() => {
-    const el = ref.current;
-    if (!el) return;
+    if (!ref.current || !numberMatches) return;
+
+    const targetNumbers = numberMatches.map((n) => parseFloat(n));
+
+    const easeOutCubic = (t: number) => 1 - Math.pow(1 - t, 3);
 
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -51,11 +40,15 @@ export function AnimatedCounter({
           const animate = (currentTime: number) => {
             const elapsed = currentTime - startTime;
             const progress = Math.min(elapsed / duration, 1);
+            const eased = easeOutCubic(progress);
 
-            const current = number * progress;
-            setDisplayValue(current);
+            const currentValues = targetNumbers.map((num) => num * eased);
 
-            if (progress < 1) requestAnimationFrame(animate);
+            setDisplayNumbers(currentValues);
+
+            if (progress < 1) {
+              requestAnimationFrame(animate);
+            }
           };
 
           requestAnimationFrame(animate);
@@ -64,16 +57,28 @@ export function AnimatedCounter({
       { threshold: 0.4 },
     );
 
-    observer.observe(el);
+    observer.observe(ref.current);
     return () => observer.disconnect();
-  }, [number, duration]);
+  }, [value, duration, numberMatches]);
 
-  return (
-    <span ref={ref}>
-      {Number.isInteger(number)
-        ? Math.round(displayValue).toLocaleString()
-        : displayValue.toFixed(2)}
-      {suffix}
-    </span>
-  );
+  // If no numbers → render static
+  if (!numberMatches) {
+    return <span ref={ref}>{value}</span>;
+  }
+
+  // Rebuild string dynamically
+  let numberIndex = 0;
+  const animatedString = value.replace(/[\d.]+/g, () => {
+    const target = parseFloat(numberMatches[numberIndex]);
+    const current = displayNumbers[numberIndex] || 0;
+
+    const formatted = Number.isInteger(target)
+      ? Math.round(current).toLocaleString(locale)
+      : current.toFixed(2);
+
+    numberIndex++;
+    return formatted;
+  });
+
+  return <span ref={ref}>{animatedString}</span>;
 }
