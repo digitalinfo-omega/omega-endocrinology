@@ -9,7 +9,7 @@ interface AdvancedDiabetesHeroProps {
   rightImage: string;
   buttonText?: string;
   onButtonClick?: () => void;
-  width?: string;
+  imageWidthClass?: string;
 }
 
 export default function AdvancedDiabetesHero({
@@ -19,15 +19,19 @@ export default function AdvancedDiabetesHero({
   rightImage,
   buttonText = "Get In Touch",
   onButtonClick,
-  width = "20%",
+  imageWidthClass,
 }: AdvancedDiabetesHeroProps) {
   return (
     <section className="relative w-full overflow-hidden">
       {/* Gradient Background */}
-      <div className="absolute inset-0 bg-linear-to-r from-[#eaf7f9] via-[#cfeff4] to-[#7fd0dc]" />
+      <div className="md:block hidden absolute inset-0 bg-linear-to-r from-[#eaf7f9] via-[#cfeff4] to-[#7fd0dc]" />
+      <div
+        className="md:hidden absolute inset-0 bg-center bg-cover bg-no-repeat"
+        style={{ backgroundImage: "url('/images/background.jpg')" }}
+      />
 
       {/* Wave */}
-      <div className="absolute inset-x-0 bottom-0 md:left-0 md:top-0 md:bottom-auto h-76.75 md:h-full md:w-[42%] z-10">
+      <div className="hidden md:block absolute inset-x-0 bottom-0 md:left-0 md:top-0 md:bottom-auto h-76.75 md:h-full md:w-[42%] z-10">
         <Image
           src={leftWave}
           alt="Wave"
@@ -39,15 +43,15 @@ export default function AdvancedDiabetesHero({
 
       {/* Hero Image */}
       <div
-        className="
-          relative md:absolute
-          mx-auto md:mx-0
-          mt-6 md:mt-0
-          md:right-12 md:top-7
-          h-55 md:h-full
-          z-20
-        "
-        style={{ width }}
+        className={`
+    relative md:absolute
+    mx-auto md:mx-0
+    mt-6 md:mt-0
+    md:right-12 md:top-7
+    h-55 md:h-full
+    z-20
+    ${imageWidthClass ?? "w-[75%] md:w-[20%]"}
+  `}
       >
         <Image
           src={rightImage}
@@ -59,7 +63,7 @@ export default function AdvancedDiabetesHero({
       </div>
 
       {/* Content */}
-      <div className="relative z-30 max-w-7xl mx-auto px-6 md:px-38 pt-6 pb-24 md:py-28">
+      <div className="relative z-30 max-w-7xl mx-auto px-6 md:px-38 md:pt-6 pt-2 pb-12 md:py-28">
         <div className="max-w-xl mx-auto md:mx-0 text-center md:text-left">
           <h2 className="text-accent heading leading-tight font-medium mb-4 md:mb-5">
             {title}

@@ -14,7 +14,7 @@ const page = () => {
         leftWave="/images/diabetes/home-wave.webp"
         rightImage="/images/gestational/home-gestational.webp"
         buttonText="Get In Touch"
-        width="32%"
+        imageWidthClass="md:w-[32%] w-[78%]"
       />
       <About
         breadcrumb="Gestational Diabetes"

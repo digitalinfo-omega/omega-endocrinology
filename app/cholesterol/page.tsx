@@ -14,7 +14,7 @@ const page = () => {
           leftWave="/images/diabetes/home-wave.webp"
           rightImage="/images/cholesterol/home-cholesterol.webp"
           buttonText="Get In Touch"
-          width="72%"
+          imageWidthClass="md:w-[72%] w-[80%]"
         />
         <About
           breadcrumb="High Blood Cholesterol"

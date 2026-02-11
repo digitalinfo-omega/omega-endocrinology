@@ -19,9 +19,9 @@ export const servicesData: ServiceCard[] = [
         <svg
           xmlns="http://www.w3.org/2000/svg"
           xmlnsXlink="http://www.w3.org/1999/xlink"
-          width="44"
-          height="44"
-          viewBox="0 0 44 44"
+          width="60"
+          height="60"
+          viewBox="0 0 60 60"
           fill="none"
         >
           <mask
@@ -30,13 +30,13 @@ export const servicesData: ServiceCard[] = [
             style={{ maskType: "alpha" }}
             x="0"
             y="0"
-            width="44"
-            height="44"
+            width="60"
+            height="60"
           >
-            <rect width="44" height="44" fill="url(#pattern0_1090_3077)" />
+            <rect width="60" height="60" fill="url(#pattern0_1090_3077)" />
           </mask>
           <g mask="url(#mask0_1090_3077)">
-            <rect width="44" height="44" fill="#EF812F" />
+            <rect width="60" height="60" fill="#EF812F" />
           </g>
           <defs>
             <pattern

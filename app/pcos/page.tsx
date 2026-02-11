@@ -14,7 +14,7 @@ const page = () => {
           leftWave="/images/diabetes/home-wave.webp"
           rightImage="/images/pcos/home-pcos.webp"
           buttonText="Get In Touch"
-          width="52%"
+          imageWidthClass="md:w-[52%] w-[90%]"
         />
         <About
           breadcrumb="PCOS/PCOD Solutions"

@@ -93,7 +93,12 @@ const OurCenters = () => {
                 Call Us
               </button>
 
-              <button className="flex items-center justify-center gap-2 border border-secondary text-secondary text-[14px] px-6 py-3 rounded-lg whitespace-nowrap">
+              <a
+                href={active.direction}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:cursor-pointer hover:bg-secondary/10 transition-colors duration-300 flex items-center justify-center gap-2 border border-secondary text-secondary text-[14px] px-6 py-3 rounded-lg whitespace-nowrap"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="20"
@@ -108,7 +113,7 @@ const OurCenters = () => {
                   />
                 </svg>
                 Get Directions
-              </button>
+              </a>
             </div>
           </div>
         </div>

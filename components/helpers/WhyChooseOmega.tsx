@@ -20,7 +20,7 @@ export default function WhyChooseOmega({ heading, cards }: Props) {
       <div className="container">
         {/* Heading */}
         <p
-          className="para mb-8 md:text-start text-center"
+          className="heading mb-8 md:text-start text-center"
           data-aos="fade-up"
           data-aos-duration="900"
           data-aos-delay="100"
@@ -44,7 +44,7 @@ export default function WhyChooseOmega({ heading, cards }: Props) {
               data-aos-delay={300 + i * 150} // staggered appearance for each card
             >
               <div>
-                <h4 className="sm-para font-medium md:mb-12 mb-7">
+                <h4 className="heading font-medium md:mb-12 mb-7">
                   {card.title}
                 </h4>
 
@@ -54,7 +54,7 @@ export default function WhyChooseOmega({ heading, cards }: Props) {
               <div className="w-full h-px bg-white/50 md:my-14 my-5" />
 
               <div className="mt-6">
-                <p className="text-[14px] opacity-90">{card.footer}</p>
+                <p className="sm-para opacity-90">{card.footer}</p>
               </div>
             </div>
           ))}

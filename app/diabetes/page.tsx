@@ -12,7 +12,7 @@ const page = () => {
         leftWave="/images/diabetes/home-wave.webp"
         rightImage="/images/diabetes/home-diabetes.webp"
         buttonText="Get In Touch"
-        width="20%"
+        imageWidthClass="w-[46%] md:w-[20%]"
       />
 
       <About

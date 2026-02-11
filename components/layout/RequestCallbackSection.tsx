@@ -25,7 +25,7 @@ const RequestCallbackSection = () => {
 
       <div className="container relative">
         <div className="flex items-center min-h-105 md:justify-end">
-          <div className="w-full md:max-w-130 bg-white rounded-2xl p-6 md:p-8 md:bg-white/80 md:backdrop-blur">
+          <div className="w-full md:max-w-130 bg-white rounded-2xl p-2 md:p-8 md:bg-white/80 md:backdrop-blur">
             <h2 className="text-center text-accent text-[18px] font-bold mb-3">
               Request a Call Back Today
             </h2>

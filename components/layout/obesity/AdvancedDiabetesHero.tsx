@@ -9,7 +9,7 @@ interface AdvancedDiabetesHeroProps {
   rightImage: string;
   buttonText?: string;
   onButtonClick?: () => void;
-  width?: string;
+  imageWidthClass?: string;
 }
 
 export default function AdvancedDiabetesHero({
@@ -19,12 +19,16 @@ export default function AdvancedDiabetesHero({
   rightImage,
   buttonText = "Get In Touch",
   onButtonClick,
-  width = "20%",
+  imageWidthClass,
 }: AdvancedDiabetesHeroProps) {
   return (
     <section className="relative w-full overflow-hidden">
       {/* Gradient Background */}
-      <div className="absolute inset-0 bg-linear-to-r from-[#eaf7f9] via-[#cfeff4] to-[#7fd0dc]" />
+      <div className="md:block hidden absolute inset-0 bg-linear-to-r from-[#eaf7f9] via-[#cfeff4] to-[#7fd0dc]" />
+      <div
+        className="md:hidden absolute inset-0 bg-center bg-cover bg-no-repeat"
+        style={{ backgroundImage: "url('/images/background.jpg')" }}
+      />
 
       {/* Left Wave (desktop only) */}
       <div className="absolute left-0 md:top-0 bottom-0 h-full md:w-[42%] w-full z-10">
@@ -39,15 +43,15 @@ export default function AdvancedDiabetesHero({
 
       {/* Right Image */}
       <div
-        className="
-          relative md:absolute
-          mx-auto md:mx-0
-          mt-6 md:mt-0
-          md:right-0 md:bottom-0
-          h-55 md:h-74.25
-          z-10
-        "
-        style={{ width }}
+        className={`
+    relative md:absolute
+    mx-auto md:mx-0
+    mt-6 md:mt-0
+    md:right-12 md:top-7
+    h-55 md:h-full
+    z-20
+    ${imageWidthClass ?? "w-[75%] md:w-[20%]"}
+  `}
       >
         <Image
           src={rightImage}

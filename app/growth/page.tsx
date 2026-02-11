@@ -13,7 +13,7 @@ const page = () => {
         leftWave="/images/diabetes/home-wave.webp"
         rightImage="/images/growth/home-growth.webp"
         buttonText="Get In Touch"
-        width="25%"
+        imageWidthClass="md:w-[25%] w-[70%]"
       />
       <About
         breadcrumb="Growth Problems in Children"

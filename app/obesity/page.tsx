@@ -14,7 +14,7 @@ your weight loss efforts while providing ongoing support."
         leftWave="/images/diabetes/home-wave.webp"
         rightImage="/images/obesity/home-obesity.webp"
         buttonText="Get In Touch"
-        width="44%"
+        imageWidthClass="md:w-[20%] w-[90%]"
       />
       <About
         breadcrumb="Obesity / Overweight"

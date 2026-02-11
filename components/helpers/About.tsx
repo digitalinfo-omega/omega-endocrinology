@@ -23,7 +23,7 @@ export default function About({
       <div className="container">
         {/* Breadcrumb */}
         <p
-          className="sm-para mb-8"
+          className="para mb-8"
           data-aos="fade-up"
           data-aos-duration="800"
           data-aos-delay="100"

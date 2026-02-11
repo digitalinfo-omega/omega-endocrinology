@@ -42,7 +42,7 @@ const OurServicesSection: FC<OurServicesSectionProps> = ({ services }) => {
             >
               {/* Icon placeholder */}
               <div className="mb-2 w-12 h-12 mx-auto md:mx-0 flex items-center justify-center text-accent">
-                <div className="w-10 h-10 flex items-center justify-center text-accent text-xl font-bold">
+                <div className="w-16 h-10 flex items-center justify-center text-accent text-xl font-bold">
                   {service.icon}
                 </div>
               </div>

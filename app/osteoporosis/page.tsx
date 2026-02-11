@@ -14,7 +14,7 @@ const page = () => {
           leftWave="/images/diabetes/home-wave.webp"
           rightImage="/images/osteoporosis/home-osteoporosis.webp"
           buttonText="Get In Touch"
-          width="20%"
+          imageWidthClass="md:w-[20%] w-[70%]"
         />
         <About
           breadcrumb="Osteoporosis Care Across All Ages"

@@ -55,13 +55,13 @@
     @apply flex justify-between items-center;
   }
   .heading {
-    @apply md:text-[24px] text-[18px];
+    @apply md:text-[24px] text-[20px];
   }
   .para {
-    @apply md:text-[18px] text-[16px];
+    @apply text-[18px];
   }
   .sm-para {
-    @apply text-[13px] md:text-[14px];
+    @apply text-[16px];
   }
   .text-omega {
     @apply text-[#e56e1b] font-sans;

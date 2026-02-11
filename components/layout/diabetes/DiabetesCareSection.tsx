@@ -70,7 +70,7 @@ export default function DiabetesCareSection() {
             </p>
 
             <p
-              className="sm-para font-medium mb-2 md:text-start text-center text-accent"
+              className="para font-medium mb-2 md:text-start text-center text-accent"
               data-aos="fade-up"
               data-aos-duration="800"
               data-aos-delay="550"
@@ -91,7 +91,7 @@ export default function DiabetesCareSection() {
             </ul>
 
             <p
-              className="sm-para font-medium mb-2 text-accent"
+              className="para font-medium mb-2 text-accent"
               data-aos="fade-up"
               data-aos-duration="800"
               data-aos-delay="650"
@@ -187,7 +187,7 @@ export default function DiabetesCareSection() {
             </p>
 
             <p
-              className="sm-para font-medium mb-2"
+              className="para font-medium mb-2"
               data-aos="fade-up"
               data-aos-duration="800"
               data-aos-delay="1150"
@@ -208,7 +208,7 @@ export default function DiabetesCareSection() {
             </ul>
 
             <p
-              className="sm-para font-medium mb-2"
+              className="para font-medium mb-2"
               data-aos="fade-up"
               data-aos-duration="800"
               data-aos-delay="1250"
@@ -259,7 +259,7 @@ export default function DiabetesCareSection() {
             data-aos-delay="1600"
           >
             <h3
-              className="text-accent font-bold mb-3 md:text-start text-center"
+              className="para text-accent font-bold mb-3 md:text-start text-center"
               data-aos="fade-up"
               data-aos-duration="800"
               data-aos-delay="1650"
@@ -279,7 +279,7 @@ export default function DiabetesCareSection() {
             </p>
 
             <p
-              className="sm-para font-medium mb-2"
+              className="para font-medium mb-2"
               data-aos="fade-up"
               data-aos-duration="800"
               data-aos-delay="1750"
@@ -300,7 +300,7 @@ export default function DiabetesCareSection() {
             </ul>
 
             <p
-              className="sm-para font-medium mb-2"
+              className="para font-medium mb-2"
               data-aos="fade-up"
               data-aos-duration="800"
               data-aos-delay="1850"
