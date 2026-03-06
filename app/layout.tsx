@@ -61,8 +61,8 @@ export default function RootLayout({
           {children}
           <OurCenters />
           <WhatWeOffer />
-          <ModernMachine />
           <RequestCallbackSection />
+          <ModernMachine />
           <LetTalkQuestionsWrapper />
           <Emergency />
           <Footer />

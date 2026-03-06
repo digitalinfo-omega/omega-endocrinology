@@ -1,10 +1,19 @@
 "use client";
 
+import Image from "next/image";
 import { Offer, offers } from "../constants/WhatWeOffer";
 
 const WhatWeOffer = () => {
   return (
-    <section className="py-10 md:py-20 border-t-accent border">
+    <section className="relative py-10 md:py-20 border-t-accent border">
+      <div className="absolute bottom-0 right-0 w-[700px] h-full">
+        <Image
+          src="/images/mask.png"
+          alt="mask"
+          fill
+          className="object-cover"
+        />
+      </div>
       <div className="container">
         <h2
           className="text-center text-accent heading font-bold mb-10"
